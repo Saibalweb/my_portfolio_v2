@@ -5,7 +5,7 @@ import { Separator } from "@radix-ui/react-separator";
 import { DownloadIcon, GithubIcon } from "lucide-react";
 import React from "react";
 
-export const Wireframe = ()=> {
+export default function Home () {
   // Work experience data
   const workExperience = [
     {
@@ -44,35 +44,35 @@ export const Wireframe = ()=> {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/docrx-cover-1.png",
+      image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/docrx-cover-1-2.png",
+        image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/docrx-cover-1-4.png",
+        image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/docrx-cover-1-3.png",
+        image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/docrx-cover-1-1.png",
+        image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
   ];
@@ -114,76 +114,11 @@ export const Wireframe = ()=> {
     "Redux",
     "TypeScript",
   ];
-
   return (
     <div className="bg-transparent flex flex-row justify-center w-full">
-      <div className="[background:url(..//wireframe---2.png)_50%_50%_/_cover,linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_100%)] w-full max-w-[1440px] relative [background-image:radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px),radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px)] [background-size:20px_20px] [background-position:0_0,10px_10px]">
+      <div className="[background:url(../assets/dotBg.png)_50%_50%,linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_100%)] w-full relative [background-image:radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px),radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px)] [background-size:20px_20px] [background-position:0_0,10px_10px]">
         {/* Hero Section */}
-        <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-24 pt-24 pb-16">
-          {/* Left side with animated graphics */}
-          <div className="relative w-full md:w-[561px] h-[560px]">
-            <div className="absolute w-[490px] h-[492px] top-[68px] left-[52px]">
-              <div className="relative w-[861px] h-[939px] top-[-237px] left-[-150px]">
-                <div className="absolute w-[345px] h-[345px] top-[290px] left-56 bg-[#5ac7f8b8] rounded-[172.64px] blur-[118.7px]" />
-                <img
-                  className="absolute w-[697px] h-[655px] top-0.5 left-[163px]"
-                  alt="Polygon background element"
-                  src="/polygon-1.svg"
-                />
-                <img
-                  className="absolute w-[636px] h-[665px] top-0 left-0"
-                  alt="Polygon background element"
-                  src="/polygon-2.svg"
-                />
-                <img
-                  className="absolute w-[834px] h-[740px] top-[199px] left-0"
-                  alt="Star background element"
-                  src="/star-1.svg"
-                />
-              </div>
-            </div>
-
-            <div className="absolute w-[521px] h-[513px] top-0 left-10">
-              <div className="relative h-[513px]">
-                <div className="absolute w-[433px] h-[433px] top-20 left-11 bg-[url(/ellipse-1.svg)] bg-[100%_100%]">
-                  <img
-                    className="absolute w-[101px] h-[167px] top-[58px] left-[332px]"
-                    alt="Ellipse decoration"
-                    src="/ellipse-2.svg"
-                  />
-                </div>
-                <img
-                  className="absolute w-[433px] h-[433px] top-20 left-11"
-                  alt="Profile image"
-                  src="/mask-group.png"
-                />
-                <img
-                  className="absolute w-[521px] h-[472px] top-0 left-0"
-                  alt="Project illustration"
-                  src="/new-project-2.png"
-                />
-              </div>
-            </div>
-
-            {/* Floating tech icons */}
-            <img
-              className="absolute w-[65px] h-[65px] top-[100px] left-[477px]"
-              alt="Edge node icon"
-              src="/carbon-edge-node.svg"
-            />
-            <img
-              className="absolute w-[104px] h-[104px] top-[308px] left-0"
-              alt="Web icon"
-              src="/mdi-web.svg"
-            />
-            <div className="absolute w-[57px] h-[57px] top-[360px] left-[485px] bg-[url(/group.png)] bg-[100%_100%]" />
-            <img
-              className="absolute w-[30px] h-[30px] top-[514px] left-[129px]"
-              alt="ReactOS icon"
-              src="/file-icons-reactos.svg"
-            />
-            <div className="absolute w-[90px] h-[90px] top-[87px] left-[69px] bg-[url(/group-1.png)] bg-[100%_100%]" />
-          </div>
+        <section className="flex flex-col md:flex-row items-center justify-between px-12 md:px-24 2xl:px-48 pt-24 pb-16">
 
           {/* Right side with text content */}
           <div className="w-full md:w-[505px] flex flex-col gap-6 mt-8 md:mt-0">
@@ -219,13 +154,13 @@ export const Wireframe = ()=> {
                 Resume
               </Button>
               <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-[27px] py-[13px] rounded flex items-center gap-2.5">
-                <div className="relative w-7 h-7">
+                {/* <div className="relative w-7 h-7">
                   <img
                     className="absolute w-[25px] h-[23px] top-0.5 left-px"
                     alt="Hire me icon"
                     src="/group-2.png"
                   />
-                </div>
+                </div> */}
                 Hire Me
               </Button>
             </div>
@@ -240,11 +175,11 @@ export const Wireframe = ()=> {
         </section>
 
         {/* Work Experience Section */}
-        <section className="px-6 md:px-24 py-12 flex flex-col md:flex-row gap-8 justify-center">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 flex flex-col md:flex-row gap-8 justify-center">
           {workExperience.map((job, index) => (
             <Card
               key={index}
-              className="backdrop-blur-[76.85px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(76.85px)_brightness(100%)] [background:url(..//frame-24-1.png)_50%_50%_/_cover,linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none shadow-[0px_0px_11.6px_#00000040] rounded-[10px]"
+              className="backdrop-blur-[76.85px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(76.85px)_brightness(100%)] [background:url(../assets/Noise_background_new.png)_50%_50%_/_cover,linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none shadow-[0px_0px_11.6px_#00000040] rounded-[10px]"
             >
               <CardContent className="flex flex-col gap-[23px] p-8">
                 <div className="w-full">
@@ -283,7 +218,7 @@ export const Wireframe = ()=> {
         </section>
 
         {/* What I Do Section */}
-        <section className="px-6 md:px-24 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
               What I Do
@@ -295,7 +230,7 @@ export const Wireframe = ()=> {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="[background:url(..//frame-24-1.png)_50%_50%_/_cover,linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none rounded-[11px]"
+                className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-4 p-[25px]">
                   <div className="relative h-[82px]">
@@ -318,7 +253,7 @@ export const Wireframe = ()=> {
         </section>
 
         {/* My Skills Section */}
-        <section className="px-6 md:px-24 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
               My Skills
@@ -339,7 +274,7 @@ export const Wireframe = ()=> {
         </section>
 
         {/* My Works Section */}
-        <section className="px-6 md:px-24 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
               My Works
@@ -351,29 +286,29 @@ export const Wireframe = ()=> {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="w-full rounded-[10px] overflow-hidden border-none [background:url(..//frame-24-1.png)_50%_50%_/_cover,linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)]"
+                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-none [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)]"
               >
                 <CardContent className="p-0">
                   <img
-                    className="w-full h-[193px] object-cover"
+                    className="w-full h-60 object-cover"
                     alt={`${project.title} cover`}
                     src={project.image}
                   />
 
-                  <div className="p-8 pt-6">
+                  <div className="p-8 pb-12 pt-6">
                     <h3 className="font-bold text-white text-[28px] font-['Montserrat',Helvetica] mb-4">
                       {project.title}
                     </h3>
 
-                    <p className="font-normal text-white text-[13px] font-['Montserrat',Helvetica] mb-6">
+                    <p className="font-normal text-white text-[18px] font-['Montserrat',Helvetica] mb-4">
                       {project.description}
                     </p>
 
-                    <div className="flex flex-wrap gap-2 mb-6">
+                    <div className="flex flex-wrap gap-2 mb-8">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
                           key={techIndex}
-                          className="bg-[#084f6f] text-white text-[11px] px-[11px] py-px rounded-md"
+                          className="bg-[#084f6f] text-white text-[11px] px-[11px] py-px rounded-md text-sm"
                         >
                           {tech}
                         </Badge>
@@ -381,11 +316,11 @@ export const Wireframe = ()=> {
                     </div>
 
                     <Button
-                      variant="outline"
-                      className="bg-[#ffffff26] text-white text-sm rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-[#ffffff40]"
+                      variant="default"
+                      className="bg-[#ffffff26] text-white text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-[#ffffff40]"
                     >
-                      <GithubIcon className="w-[15px] h-[15px]" />
-                      GithubIcon
+                      <GithubIcon className="w-[15px] h-[15px] " />
+                      Github
                     </Button>
                   </div>
                 </CardContent>
@@ -395,12 +330,18 @@ export const Wireframe = ()=> {
         </section>
 
         {/* Blog Section */}
-        <section className="px-6 md:px-24 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12">
+        <div className="flex flex-col items-center mb-12">
+            <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
+              My Blogs
+            </h2>
+            <Separator className="w-[257px] h-[3px] bg-white" />
+          </div>
           <div className="flex flex-col gap-6">
             {blogPosts.map((post, index) => (
               <Card
                 key={index}
-                className={`w-full ${post.isDark ? "bg-black" : "bg-[#1e1e1e]"} rounded-[10px] border-none`}
+                className={`w-full bg-black rounded-[10px] border-none cursor-pointer hover:bg-[#1E1E1E]`}
               >
                 <CardContent className="flex flex-col gap-[17px] p-[30px]">
                   <div className="relative w-[110px] h-[27px]">
@@ -435,7 +376,7 @@ export const Wireframe = ()=> {
         </section>
 
         {/* Footer */}
-        <footer className="px-6 md:px-24 py-12 mt-12">
+        <footer className="px-12 md:px-24 2xl:px-48 py-12 mt-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Quick Links */}
             <div>
@@ -458,8 +399,8 @@ export const Wireframe = ()=> {
               </ul>
             </div>
 
-            {/* Contact Me */}
-            <div>
+            {/* Contact Me */} 
+            <div className="flex flex-col items-center">
               <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6">
                 Contact Me
               </h3>
@@ -472,8 +413,8 @@ export const Wireframe = ()=> {
             </div>
 
             {/* Follow Me */}
-            <div>
-              <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6">
+            <div className="flex flex-col items-end">
+              <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6 mr-4">
                 Follow Me
               </h3>
               <div className="flex gap-4">
