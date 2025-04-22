@@ -116,12 +116,21 @@ export default function Home () {
   ];
   return (
     <div className="bg-transparent flex flex-row justify-center w-full">
-      <div className="[background:url(../assets/dotBg.png)_50%_50%,linear-gradient(0deg,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_100%)] w-full relative [background-image:radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px),radial-gradient(rgba(90,199,248,0.1)_1px,transparent_1px)] [background-size:20px_20px] [background-position:0_0,10px_10px]">
+      <div className="bg-black">
         {/* Hero Section */}
-        <section className="flex flex-col md:flex-row items-center justify-between px-12 md:px-24 2xl:px-48 pt-24 pb-16">
+        
+        <section className="flex flex-col lg:flex-row-reverse items-center justify-center px-12 md:px-24 2xl:px-48 pt-24 pb-16 bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
+          {/* Left side with image */}
+          <div className=" w-full flex items-center justify-center">
+            <img
+              className="sm:w-[400px] sm:h-[400px] lg:w-full lg:h-full object-cover"
+              alt="Hero image"
+              src="/My_pic.png"
+            />
+          </div>
 
           {/* Right side with text content */}
-          <div className="w-full md:w-[505px] flex flex-col gap-6 mt-8 md:mt-0">
+          <div className="w-full md:w-full flex flex-col gap-6 mt-8 md:mt-0">
             <h1 className="font-semibold text-white text-4xl font-['Inter',Helvetica]">
               Full Stack Developer
             </h1>
@@ -149,11 +158,11 @@ export default function Home () {
             </div>
 
             <div className="flex gap-6 mt-4">
-              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-[27px] py-[13px] rounded flex items-center gap-2.5">
-                <DownloadIcon className="w-7 h-7" />
+              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+                <DownloadIcon className="w-10 h-10" />
                 Resume
               </Button>
-              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-[27px] py-[13px] rounded flex items-center gap-2.5">
+              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
                 {/* <div className="relative w-7 h-7">
                   <img
                     className="absolute w-[25px] h-[23px] top-0.5 left-px"
