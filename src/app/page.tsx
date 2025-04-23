@@ -4,6 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
 import { DownloadIcon, GithubIcon } from "lucide-react";
 import React from "react";
+import xIcon from "../assets/x.svg";
+import linkdinIcon from "../assets/linkdin.svg";
+import githubIcon from "../assets/github.svg";
+import Image from "next/image";
 
 export default function Home () {
   // Work experience data
@@ -175,10 +179,33 @@ export default function Home () {
             </div>
 
             <div className="mt-4">
-              <p className="font-normal text-white text-2xl font-['Inter',Helvetica]">
+              <p className="font-normal text-white text-2xl font-['Inter',Helvetica] mb-2">
                 Follow me on:
               </p>
               {/* Social icons would go here */}
+              <div className="flex gap-8 mt-2">
+                <a href="">
+                <Image
+                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
+                  alt="x icon"
+                  src={xIcon}
+                />
+                </a>
+                <a href="">
+                <Image
+                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
+                  alt="linkdin icon"
+                  src={linkdinIcon} 
+                />
+                </a>
+                <a href="">
+                <Image
+                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
+                  alt="github icon"
+                  src={githubIcon}
+                />
+                </a>
+              </div>
             </div>
           </div>
         </section>
