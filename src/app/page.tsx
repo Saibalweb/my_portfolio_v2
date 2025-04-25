@@ -4,10 +4,11 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
 import { DownloadIcon, GithubIcon } from "lucide-react";
 import React from "react";
-import xIcon from "../assets/x.svg";
-import linkdinIcon from "../assets/linkdin.svg";
-import githubIcon from "../assets/github.svg";
+import xIcon from "../assets/icons/x.svg";
+import linkdinIcon from "../assets/icons/linkdin.svg";
+import githubIcon from "../assets/icons/github.svg";
 import Image from "next/image";
+import socialLinks from "@/constants/socialLinks";
 
 export default function Home () {
   // Work experience data
@@ -184,27 +185,15 @@ export default function Home () {
               </p>
               {/* Social icons would go here */}
               <div className="flex gap-8 mt-2">
-                <a href="">
-                <Image
-                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
-                  alt="x icon"
-                  src={xIcon}
-                />
-                </a>
-                <a href="">
-                <Image
-                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
-                  alt="linkdin icon"
-                  src={linkdinIcon} 
-                />
-                </a>
-                <a href="">
-                <Image
-                  className="w-[35px] h-[35px] mt-2 cursor-pointer"
-                  alt="github icon"
-                  src={githubIcon}
-                />
-                </a>
+                {socialLinks.map((link, index) => (
+                  <a key={index} href={link.link} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      className="w-[35px] h-[35px] mt-2 cursor-pointer"
+                      alt={`${link.name} icon`}
+                      src={link.icon}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
