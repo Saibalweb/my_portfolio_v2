@@ -4,9 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
 import { DownloadIcon, GithubIcon } from "lucide-react";
 import React from "react";
-import xIcon from "../assets/icons/x.svg";
-import linkdinIcon from "../assets/icons/linkdin.svg";
-import githubIcon from "../assets/icons/github.svg";
 import Image from "next/image";
 import socialLinks from "@/constants/socialLinks";
 
