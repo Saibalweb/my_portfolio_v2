@@ -439,22 +439,16 @@ export default function Home () {
               <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6 mr-4">
                 Follow Me
               </h3>
-              <div className="flex gap-4">
-                <img
-                  className="w-[35px] h-[35px]"
-                  alt="Social media icon"
-                  src="/frame-2.svg"
-                />
-                <img
-                  className="w-[35px] h-[35px]"
-                  alt="Social media icon"
-                  src="/frame-1.svg"
-                />
-                <img
-                  className="w-[35px] h-[35px]"
-                  alt="Social media icon"
-                  src="/frame.svg"
-                />
+              <div className="flex gap-8 mt-2">
+                {socialLinks.map((link, index) => (
+                  <a key={index} href={link.link} target="_blank" rel="noopener noreferrer">
+                    <Image
+                      className="w-[35px] h-[35px] mt-2 cursor-pointer"
+                      alt={`${link.name} icon`}
+                      src={link.icon}
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
