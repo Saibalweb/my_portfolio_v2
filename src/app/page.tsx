@@ -1,3 +1,4 @@
+'use client';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -363,7 +364,7 @@ export default function Home () {
             {blogPosts.map((post, index) => (
               <Card
                 key={index}
-                className={`w-full bg-black rounded-[10px] border-none cursor-pointer hover:bg-[#1E1E1E]`}
+                className={`w-4/5 bg-black rounded-[10px] border-none cursor-pointer hover:bg-[#1E1E1E]`}
               >
                 <CardContent className="flex flex-col gap-[17px] p-[30px]">
                   <div className="relative w-[110px] h-[27px]">
