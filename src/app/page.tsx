@@ -54,28 +54,28 @@ export default function Home () {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-        image: "/DocRx_cover.png",
+      image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-        image: "/DocRx_cover.png",
+      image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-        image: "/DocRx_cover.png",
+      image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
     {
       title: "DocRx",
       description:
         "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-        image: "/DocRx_cover.png",
+      image: "/DocRx_cover.png",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
   ];
@@ -121,7 +121,7 @@ export default function Home () {
     <div className="bg-transparent flex flex-row justify-center w-full">
       <div className="bg-black">
         {/* Hero Section */}
-        
+
         <section className="flex flex-col lg:flex-row-reverse items-center justify-center px-12 md:px-24 2xl:px-48 pt-24 pb-16 bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
           {/* Left side with image */}
           <div className=" w-full flex items-center justify-center">
@@ -184,7 +184,12 @@ export default function Home () {
               {/* Social icons would go here */}
               <div className="flex gap-8 mt-2">
                 {socialLinks.map((link, index) => (
-                  <a key={index} href={link.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    key={index}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       className="w-[35px] h-[35px] mt-2 cursor-pointer"
                       alt={`${link.name} icon`}
@@ -354,7 +359,7 @@ export default function Home () {
 
         {/* Blog Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
-        <div className="flex flex-col items-center mb-12">
+          <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
               My Blogs
             </h2>
@@ -422,7 +427,7 @@ export default function Home () {
               </ul>
             </div>
 
-            {/* Contact Me */} 
+            {/* Contact Me */}
             <div className="flex flex-col items-center">
               <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6">
                 Contact Me
@@ -442,7 +447,12 @@ export default function Home () {
               </h3>
               <div className="flex gap-8 mt-2">
                 {socialLinks.map((link, index) => (
-                  <a key={index} href={link.link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    key={index}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       className="w-[35px] h-[35px] mt-2 cursor-pointer"
                       alt={`${link.name} icon`}
