@@ -258,7 +258,7 @@ export default function Home () {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none rounded-[11px]"
+                className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-[#5AC7F8] rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-4 p-[25px]">
                   <div className="relative h-[82px]">
@@ -314,7 +314,7 @@ export default function Home () {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-none [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)]"
+                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-[#5AC7F8] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)]"
               >
                 <CardContent className="p-0">
                   <img
