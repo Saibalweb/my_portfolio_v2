@@ -126,7 +126,7 @@ export default function Home () {
           {/* Left side with image */}
           <div className=" w-full flex items-center justify-center">
             <img
-              className="sm:w-[400px] sm:h-[400px] lg:w-full lg:h-full object-cover"
+              className="w-[300px] h-[300px] lg:w-full lg:h-full object-cover"
               alt="Hero image"
               src="/My_pic.png"
             />
@@ -310,7 +310,7 @@ export default function Home () {
             <Separator className="w-[257px] h-[3px] bg-white" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center">
             {projects.map((project, index) => (
               <Card
                 key={index}
