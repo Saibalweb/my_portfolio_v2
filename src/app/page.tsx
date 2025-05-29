@@ -203,47 +203,6 @@ export default function Home () {
         </section>
 
         {/* Work Experience Section */}
-        <section className="px-12 md:px-24 2xl:px-48 py-12 flex flex-col md:flex-row gap-8 justify-center">
-          {workExperience.map((job, index) => (
-            <Card
-              key={index}
-              className="backdrop-blur-[76.85px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(76.85px)_brightness(100%)] [background:url(../assets/Noise_background_new.png)_50%_50%_/_cover,linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-none shadow-[0px_0px_11.6px_#00000040] rounded-[10px]"
-            >
-              <CardContent className="flex flex-col gap-[23px] p-8">
-                <div className="w-full">
-                  <div className="flex items-center gap-2.5">
-                    <img
-                      className="w-6 h-6"
-                      alt="Work icon"
-                      src="/hugeicons-work.svg"
-                    />
-                    <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica]">
-                      {job.company}
-                    </h3>
-                  </div>
-                  <p className="font-normal text-white text-base font-['Inter',Helvetica] mt-2">
-                    {job.position}
-                  </p>
-                </div>
-                <div>
-                  <p className="font-normal text-white text-xl font-['Inter',Helvetica]">
-                    {job.period}
-                  </p>
-                  <p className="font-normal text-white text-base font-['Inter',Helvetica] mt-2">
-                    {job.location}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-
-          {/* Connecting vector between work experience cards */}
-          <img
-            className="w-[228px] h-[69px] mx-auto"
-            alt="Vector connecting work experiences"
-            src="/vector-3.svg"
-          />
-        </section>
 
         {/* What I Do Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
