@@ -7,7 +7,7 @@ import { DownloadIcon, GithubIcon } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 import socialLinks from "@/constants/socialLinks";
-
+import mobileIcon from '../assets/icons/mobile_icon.png'
 export default function Home () {
   // Work experience data
   const workExperience = [
@@ -25,19 +25,19 @@ export default function Home () {
       title: "Mobile Development",
       description:
         "I specialize in mobile app development using React Native and Expo,",
-      icon: "/ic-round-developer-mode.svg",
+      icon: mobileIcon,
     },
     {
       title: "Web Development",
       description:
         "I excel in web application development with a strong foundation",
-      icon: "/ic-round-developer-mode.svg",
+      icon: mobileIcon,
     },
     {
       title: "Mobile Development",
       description:
         "I specialize in mobile app development using React Native and Expo,",
-      icon: "/ic-round-developer-mode.svg",
+      icon: mobileIcon,
     },
   ];
 
@@ -224,7 +224,7 @@ export default function Home () {
                     <img
                       className="w-11 h-11"
                       alt="Developer icon"
-                      src={service.icon}
+                      src={service.icon.src}
                     />
                     <h3 className="absolute top-[53px] left-2 font-medium text-white text-2xl font-['Inter',Helvetica]">
                       {service.title}
