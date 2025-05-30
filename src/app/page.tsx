@@ -367,7 +367,7 @@ export default function Home () {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Quick Links */}
             <div>
-              <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6">
+              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6">
                 Quick Links
               </h3>
               <ul className="space-y-4">
@@ -387,8 +387,8 @@ export default function Home () {
             </div>
 
             {/* Contact Me */}
-            <div className="flex flex-col items-center">
-              <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6">
+            <div className="flex flex-col md:items-center my-8 md:my-0">
+              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6">
                 Contact Me
               </h3>
               <p className="font-normal text-white text-xl font-['Inter',Helvetica] mb-4">
@@ -400,8 +400,8 @@ export default function Home () {
             </div>
 
             {/* Follow Me */}
-            <div className="flex flex-col items-end">
-              <h3 className="font-medium text-white text-2xl font-['Inter',Helvetica] mb-6 mr-4">
+            <div className="flex flex-col md:items-end">
+              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6 mr-4">
                 Follow Me
               </h3>
               <div className="flex gap-8 mt-2">
