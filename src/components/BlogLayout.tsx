@@ -22,7 +22,7 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: any
         ))}
       </div>
 
-      <article className="prose prose-invert prose-neutral max-w-none">{children}</article>
+      <article className="prose max-w-none">{children}</article>
     </div>
   );
 }
