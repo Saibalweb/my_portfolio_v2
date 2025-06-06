@@ -1,9 +1,7 @@
 import BlogLayout from '@/components/BlogLayout';
 import MDXContent from '@/components/MDXContent';
 import { getPostBySlug } from '@/lib/getPostbySlug';
-import { MDXRemote } from 'next-mdx-remote';
-import React from 'react'
-import { fromTheme } from 'tailwind-merge';
+import React from 'react';
 
 const page = async({
   params,
