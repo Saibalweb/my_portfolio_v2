@@ -119,10 +119,10 @@ export default function Home () {
   ];
   return (
     <div className="bg-transparent flex flex-row justify-center w-full">
-      <div className="bg-black">
+      <div className="">
         {/* Hero Section */}
 
-        <section className="flex flex-col lg:flex-row-reverse items-center justify-center px-12 md:px-24 2xl:px-48 pt-24 pb-16 bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
+        <section className="flex flex-col lg:flex-row-reverse items-center justify-center px-12 md:px-24 2xl:px-48 pt-24 pb-16 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
           {/* Left side with image */}
           <div className=" w-full flex items-center justify-center">
             <img
@@ -134,11 +134,11 @@ export default function Home () {
 
           {/* Right side with text content */}
           <div className="w-full md:w-full flex flex-col gap-6 mt-8 md:mt-0">
-            <h1 className="font-semibold text-white text-4xl font-['Inter',Helvetica]">
+            <h1 className="font-semibold text-foreground text-4xl font-['Inter',Helvetica]">
               Full Stack Developer
             </h1>
 
-            <p className="font-normal text-white text-xl font-['Inter',Helvetica]">
+            <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
               I&apos;m a dedicated full-stack developer with expertise in React
               JS, React Native, and backend technologies like Express, MongoDB,
               SQL, and Docker.
@@ -161,11 +161,11 @@ export default function Home () {
             </div>
 
             <div className="flex gap-6 mt-4">
-              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
-                <DownloadIcon className="w-10 h-10" />
+              <Button className="bg-[#5ac7f8] text-foreground text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+                <DownloadIcon className="w-20 h-20" />
                 Resume
               </Button>
-              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+              <Button className="bg-[#5ac7f8] text-foreground text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
                 {/* <div className="relative w-7 h-7">
                   <img
                     className="absolute w-[25px] h-[23px] top-0.5 left-px"
@@ -178,7 +178,7 @@ export default function Home () {
             </div>
 
             <div className="mt-4">
-              <p className="font-normal text-white text-2xl font-['Inter',Helvetica] mb-2">
+              <p className="font-normal text-foreground text-2xl font-['Inter',Helvetica] mb-2">
                 Follow me on:
               </p>
               {/* Social icons would go here */}
@@ -207,10 +207,10 @@ export default function Home () {
         {/* What I Do Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
-            <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
+            <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               What I Do
             </h2>
-            <Separator className="w-[262px] h-[3px] bg-white" />
+            <Separator className="w-[262px] h-[3px] bg-foreground" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -226,11 +226,11 @@ export default function Home () {
                       alt="Developer icon"
                       src={service.icon.src}
                     />
-                    <h3 className="absolute top-[53px] left-2 font-medium text-white text-2xl font-['Inter',Helvetica]">
+                    <h3 className="absolute top-[53px] left-2 font-medium text-foreground text-2xl font-['Inter',Helvetica]">
                       {service.title}
                     </h3>
                   </div>
-                  <p className="font-normal text-white text-base font-['Inter',Helvetica]">
+                  <p className="font-normal text-foreground text-base font-['Inter',Helvetica]">
                     {service.description}
                   </p>
                 </CardContent>
@@ -242,10 +242,10 @@ export default function Home () {
         {/* My Skills Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
-            <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
+            <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               My Skills
             </h2>
-            <Separator className="w-[231px] h-[3px] bg-white" />
+            <Separator className="w-[231px] h-[3px] bg-foreground" />
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -263,10 +263,10 @@ export default function Home () {
         {/* My Works Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
-            <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
+            <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               My Works
             </h2>
-            <Separator className="w-[257px] h-[3px] bg-white" />
+            <Separator className="w-[257px] h-[3px] bg-foreground" />
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center">
@@ -283,11 +283,11 @@ export default function Home () {
                   />
 
                   <div className="p-8 pb-12 pt-6">
-                    <h3 className="font-bold text-white text-[28px] font-['Montserrat',Helvetica] mb-4">
+                    <h3 className="font-bold text-foreground text-[28px] font-['Montserrat',Helvetica] mb-4">
                       {project.title}
                     </h3>
 
-                    <p className="font-normal text-white text-[18px] font-['Montserrat',Helvetica] mb-4">
+                    <p className="font-normal text-foreground text-[18px] font-['Montserrat',Helvetica] mb-4">
                       {project.description}
                     </p>
 
@@ -304,7 +304,7 @@ export default function Home () {
 
                     <Button
                       variant="default"
-                      className="bg-[#ffffff26] text-white text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-[#ffffff40]"
+                      className="bg-[#ffffff26] text-foreground text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-[#ffffff40]"
                     >
                       <GithubIcon className="w-[15px] h-[15px] " />
                       Github
@@ -319,16 +319,16 @@ export default function Home () {
         {/* Blog Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
-            <h2 className="font-semibold text-white text-5xl font-['Montserrat',Helvetica] mb-2">
+            <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               My Blogs
             </h2>
-            <Separator className="w-[257px] h-[3px] bg-white" />
+            <Separator className="w-[257px] h-[3px] bg-foreground" />
           </div>
           <div className="flex flex-col gap-6">
             {blogPosts.map((post, index) => (
               <Card
                 key={index}
-                className={`w-4/5 bg-black rounded-[10px] border-none cursor-pointer hover:bg-[#1E1E1E]`}
+                className={`w-4/5 bg-background rounded-[10px] border-none cursor-pointer dark:hover:bg-[#1E1E1E] hover:bg-gray-200`}
               >
                 <CardContent className="flex flex-col gap-[17px] p-[30px]">
                   <div className="relative w-[110px] h-[27px]">
@@ -342,11 +342,11 @@ export default function Home () {
                     </p>
                   </div>
 
-                  <h3 className="font-semibold text-white text-2xl font-['Inter',Helvetica]">
+                  <h3 className="font-semibold text-foreground text-2xl font-['Inter',Helvetica]">
                     {post.title}
                   </h3>
 
-                  <p className="font-normal text-white text-base font-['Inter',Helvetica]">
+                  <p className="font-normal text-foreground text-base font-['Inter',Helvetica]">
                     {post.content}
                   </p>
 
@@ -367,20 +367,20 @@ export default function Home () {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {/* Quick Links */}
             <div>
-              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6">
+              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6">
                 Quick Links
               </h3>
               <ul className="space-y-4">
-                <li className="font-normal text-white text-xl font-['Inter',Helvetica]">
+                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
                   Home
                 </li>
-                <li className="font-normal text-white text-xl font-['Inter',Helvetica]">
+                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
                   About Me
                 </li>
-                <li className="font-normal text-white text-xl font-['Inter',Helvetica]">
+                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
                   My Works
                 </li>
-                <li className="font-normal text-white text-xl font-['Inter',Helvetica]">
+                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
                   Blogs
                 </li>
               </ul>
@@ -388,20 +388,20 @@ export default function Home () {
 
             {/* Contact Me */}
             <div className="flex flex-col md:items-center my-8 md:my-0">
-              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6">
+              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6">
                 Contact Me
               </h3>
-              <p className="font-normal text-white text-xl font-['Inter',Helvetica] mb-4">
+              <p className="font-normal text-foreground text-xl font-['Inter',Helvetica] mb-4">
                 saibalkole@gmail.com
               </p>
-              <p className="font-normal text-white text-xl font-['Inter',Helvetica]">
+              <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
                 +(91) 8116658972
               </p>
             </div>
 
             {/* Follow Me */}
             <div className="flex flex-col md:items-end">
-              <h3 className="font-medium text-white text-3xl font-['Inter',Helvetica] mb-6 mr-4">
+              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6 mr-4">
                 Follow Me
               </h3>
               <div className="flex gap-8 mt-2">
@@ -424,7 +424,7 @@ export default function Home () {
           </div>
 
           <div className="text-center">
-            <p className="font-normal text-white text-xl font-['Inter',Helvetica]">
+            <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
               © 2025 Saibal Kole . All right reserved
             </p>
           </div>

@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button"
 import { Toggle } from "@/components/ui/toggle"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { useTheme } from "next-themes";
+import ThemeDropDown from "./ThemeDropDown";
 
 export default function Navbar() {
+  const {theme} = useTheme();
+  console.log(theme);
   return (
     <header className="sticky top-0 z-50 w-full border-b dark:border-gray-800 bg-background/75">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
@@ -48,9 +51,7 @@ export default function Navbar() {
             <PhoneIcon className="h-5 w-5 text-gray-500 dark:text-gray-400" />
             <span className="text-gray-500 dark:text-gray-400">123-456-7890</span>
           </div>
-          <Toggle aria-label="Toggle dark mode" className="rounded-full">
-            <MoonIcon className="h-5 w-5 text-gray-500 dark:text-gray-400" />
-          </Toggle>
+          <ThemeDropDown/>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full md:hidden">
