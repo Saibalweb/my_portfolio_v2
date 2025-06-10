@@ -1,6 +1,9 @@
+import linkdin from './icons/linkdin.svg';
+import github from './icons/github.svg';
+import x from './icons/x.svg';
 const icons = {
-    linkdin: require('./icons/linkdin.svg'),
-    github: require('./icons/github.svg'),
-    x: require('./icons/x.svg'),
+    linkdin:linkdin.src,
+    github:github.src,
+    x:x.src
 }
 export default icons;

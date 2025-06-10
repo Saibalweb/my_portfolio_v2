@@ -12,7 +12,7 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: any
         <span className="mx-2">•</span>
         <span>{readingTime}</span>
       </div>
-      <h1 className="text-3xl font-bold mb-4 text text-black">{title}</h1>
+      <h1 className="text-3xl font-bold mb-4 text text-foreground">{title}</h1>
 
       <div className="flex flex-wrap gap-2 mb-6">
         {tags.map((tag: string) => (
@@ -22,7 +22,7 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: any
         ))}
       </div>
 
-      <article className="prose max-w-none">{children}</article>
+      <article className="prose dark:prose-invert max-w-none">{children}</article>
     </div>
   );
 }

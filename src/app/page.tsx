@@ -194,6 +194,8 @@ export default function Home () {
                       className="w-[35px] h-[35px] mt-2 cursor-pointer"
                       alt={`${link.name} icon`}
                       src={link.icon}
+                      width={35}
+                      height={35}
                     />
                   </a>
                 ))}
@@ -273,7 +275,7 @@ export default function Home () {
             {projects.map((project, index) => (
               <Card
                 key={index}
-                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-[#5AC7F8] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)]"
+                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-[#5AC7F8] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer"
               >
                 <CardContent className="p-0">
                   <img
@@ -304,7 +306,7 @@ export default function Home () {
 
                     <Button
                       variant="default"
-                      className="bg-[#ffffff26] text-foreground text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-[#ffffff40]"
+                      className="dark:bg-[#ffffff26] bg-primary text-background dark:text-foreground text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-cyan-500 dark:hover:bg-[#ffffff40] cursor-pointer"
                     >
                       <GithubIcon className="w-[15px] h-[15px] " />
                       Github
@@ -361,74 +363,6 @@ export default function Home () {
             ))}
           </div>
         </section>
-
-        {/* Footer */}
-        <footer className="px-12 md:px-24 2xl:px-48 py-12 mt-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {/* Quick Links */}
-            <div>
-              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6">
-                Quick Links
-              </h3>
-              <ul className="space-y-4">
-                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                  Home
-                </li>
-                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                  About Me
-                </li>
-                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                  My Works
-                </li>
-                <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                  Blogs
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Me */}
-            <div className="flex flex-col md:items-center my-8 md:my-0">
-              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6">
-                Contact Me
-              </h3>
-              <p className="font-normal text-foreground text-xl font-['Inter',Helvetica] mb-4">
-                saibalkole@gmail.com
-              </p>
-              <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                +(91) 8116658972
-              </p>
-            </div>
-
-            {/* Follow Me */}
-            <div className="flex flex-col md:items-end">
-              <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6 mr-4">
-                Follow Me
-              </h3>
-              <div className="flex gap-8 mt-2">
-                {socialLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      className="w-[35px] h-[35px] mt-2 cursor-pointer"
-                      alt={`${link.name} icon`}
-                      src={link.icon}
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-              © 2025 Saibal Kole . All right reserved
-            </p>
-          </div>
-        </footer>
       </div>
     </div>
   );
