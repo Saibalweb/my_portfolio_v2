@@ -15,11 +15,11 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: any
       <h1 className="text-3xl font-bold mb-4 text text-foreground">{title}</h1>
 
       <div className="flex flex-wrap gap-2 mb-6">
-        {tags.map((tag: string) => (
+        {tags?tags.map((tag: string) => (
           <span key={tag} className="bg-gray-700 px-3 py-1 rounded-full text-xs">
             {tag}
           </span>
-        ))}
+        )):null}
       </div>
 
       <article className="prose dark:prose-invert max-w-none">{children}</article>
