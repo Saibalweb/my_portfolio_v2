@@ -1,6 +1,4 @@
 // components/BlogLayout.tsx
-import React from 'react';
-
 export default function BlogLayout({ frontMatter, children }: { frontMatter: any; children: React.ReactNode }) {
   const { title, date, tags, readingTime, image } = frontMatter;
 

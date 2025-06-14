@@ -10,10 +10,9 @@ const page = async({
 }) => {
     const {slug}= await params;
     const { frontMatter, content } = await getPostBySlug(slug);
-    console.log(frontMatter,content);
   return (
     <BlogLayout frontMatter={frontMatter}>
-      <MDXContent source={content}/>
+      {content}
     </BlogLayout>
   )
 }
