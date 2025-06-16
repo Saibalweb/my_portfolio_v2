@@ -161,11 +161,11 @@ export default function Home () {
             </div>
 
             <div className="flex gap-6 mt-4">
-              <Button className="bg-[#5ac7f8] text-foreground text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
                 <DownloadIcon className="w-20 h-20" />
                 Resume
               </Button>
-              <Button className="bg-[#5ac7f8] text-foreground text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+              <Button className="bg-[#5ac7f8] text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
                 {/* <div className="relative w-7 h-7">
                   <img
                     className="absolute w-[25px] h-[23px] top-0.5 left-px"

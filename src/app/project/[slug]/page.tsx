@@ -1,4 +1,5 @@
 import MDXContent from '@/components/MDXContent';
+import { Button } from '@/components/ui/button';
 import { parseMdx } from '@/lib/parseMdx';
 import React from 'react'
 
