@@ -16,7 +16,7 @@ export default function Navbar() {
           <MountainIcon className="h-6 w-6" />
           <span className="sr-only">Acme Inc</span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center gap-10 text-sm font-medium md:flex">
           <Link
             href="#"
             className="text-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
@@ -29,14 +29,14 @@ export default function Navbar() {
             className="text-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             prefetch={false}
           >
-            About
+            My Works
           </Link>
           <Link
             href="#"
             className="text-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             prefetch={false}
           >
-            Services
+            Blogs
           </Link>
           <Link
             href="#"
