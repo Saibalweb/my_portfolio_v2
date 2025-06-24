@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="px-12 md:px-24 2xl:px-48 py-12 mt-12">
+    <footer className="max-w-7xl mx-auto mt-12 sm:px-16 xl:px-0">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {/* Quick Links */}
         <div>

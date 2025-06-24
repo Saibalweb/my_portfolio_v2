@@ -118,12 +118,13 @@ export default function Home () {
     "TypeScript",
   ];
   return (
-    <div className="bg-transparent flex flex-row justify-center w-full">
+    <div className="flex flex-row justify-center w-full">
       <div className="">
         {/* Hero Section */}
 
-        <section className="flex flex-col lg:flex-row-reverse items-center justify-center px-12 md:px-24 2xl:px-48 pt-24 pb-16 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
+        <section className="w-dvw flex justify-center items-center px-12 md:px-24 pt-24 pb-16 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
           {/* Left side with image */}
+          <div className="max-w-7xl  flex flex-col lg:flex-row-reverse items-center justify-center">
           <div className=" w-full flex items-center justify-center">
             <img
               className="w-[300px] h-[300px] lg:w-full lg:h-full object-cover"
@@ -202,9 +203,8 @@ export default function Home () {
               </div>
             </div>
           </div>
+          </div>
         </section>
-
-        {/* Work Experience Section */}
 
         {/* What I Do Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
