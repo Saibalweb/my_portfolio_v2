@@ -122,7 +122,7 @@ export default function Home () {
       <div className="">
         {/* Hero Section */}
 
-        <section className="w-dvw flex justify-center items-center px-12 md:px-24 pt-24 pb-16 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
+        <section className="w-full flex justify-center items-center px-12 md:px-24 pt-24 pb-16 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] dark:bg-[radial-gradient(#404040_1px,transparent_1px)] bg-[length:30px_30px]">
           {/* Left side with image */}
           <div className="max-w-7xl  flex flex-col lg:flex-row-reverse items-center justify-center">
           <div className=" w-full flex items-center justify-center">
