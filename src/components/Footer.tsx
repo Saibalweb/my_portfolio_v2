@@ -4,8 +4,8 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className="max-w-7xl mx-auto mt-12 sm:px-16 xl:px-0">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+    <footer className="mx-auto mt-12 px-12 md:px-24 2xl:px-48 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 xl:max-w-[1560px] mx-auto">
         {/* Quick Links */}
         <div>
           <h3 className="font-medium text-foreground text-3xl font-['Inter',Helvetica] mb-6">
