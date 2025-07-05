@@ -5,6 +5,7 @@ import { Toggle } from "@/components/ui/toggle"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { useTheme } from "next-themes";
 import ThemeDropDown from "./ThemeDropDown";
+import SocialComponent from "./SocialComponent";
 
 export default function Navbar() {
   const {theme} = useTheme();
@@ -60,36 +61,37 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="md:hidden">
-              <div className="grid gap-6 p-4">
+              <div className="grid gap-6 p-8">
                 <Link
                   href="#"
-                  className="text-xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                  className="text-3xl font-medium text-foreground"
                   prefetch={false}
                 >
                   Home
                 </Link>
                 <Link
                   href="#"
-                  className="text-xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                  className="text-3xl font-medium text-foreground"
                   prefetch={false}
                 >
-                  About
+                  My Works
                 </Link>
                 <Link
                   href="#"
-                  className="text-xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                  className="text-3xl font-medium text-foreground"
                   prefetch={false}
                 >
-                  Services
+                  Blogs
                 </Link>
                 <Link
                   href="#"
-                  className="text-xl font-medium text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
+                  className="text-3xl font-medium text-foreground"
                   prefetch={false}
                 >
                   Contact
                 </Link>
               </div>
+              <SocialComponent className="p-8 mt-auto mb-6"/>
             </SheetContent>
           </Sheet>
         </div>

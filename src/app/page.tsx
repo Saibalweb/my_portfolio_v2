@@ -8,6 +8,7 @@ import React from "react";
 import Image from "next/image";
 import socialLinks from "@/constants/socialLinks";
 import mobileIcon from '../assets/icons/mobile_icon.png'
+import SocialComponent from "@/components/SocialComponent";
 export default function Home () {
   // Work experience data
   const workExperience = [
@@ -177,31 +178,7 @@ export default function Home () {
                 Hire Me
               </Button>
             </div>
-
-            <div className="mt-4">
-              <p className="font-normal text-foreground text-2xl font-['Inter',Helvetica] mb-2">
-                Follow me on:
-              </p>
-              {/* Social icons would go here */}
-              <div className="flex gap-8 mt-2">
-                {socialLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      className="w-[35px] h-[35px] mt-2 cursor-pointer"
-                      alt={`${link.name} icon`}
-                      src={link.icon}
-                      width={35}
-                      height={35}
-                    />
-                  </a>
-                ))}
-              </div>
-            </div>
+            <SocialComponent className="mt-4"/>
           </div>
           </div>
         </section>
