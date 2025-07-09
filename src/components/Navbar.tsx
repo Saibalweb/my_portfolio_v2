@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Toggle } from "@/components/ui/toggle";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { useTheme } from "next-themes";
 import ThemeDropDown from "./ThemeDropDown";
@@ -114,7 +113,7 @@ export default function Navbar() {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -135,26 +134,8 @@ function MenuIcon(props) {
   );
 }
 
-function MoonIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
-    </svg>
-  );
-}
 
-function MountainIcon(props) {
+function MountainIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -173,7 +154,7 @@ function MountainIcon(props) {
   );
 }
 
-function PhoneIcon(props) {
+function PhoneIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

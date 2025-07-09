@@ -1,5 +1,4 @@
 import matter from "gray-matter";
-import { serialize } from "next-mdx-remote/serialize";
 import {compileMDX} from "next-mdx-remote/rsc";
 import remarkGfm from 'remark-gfm'
 import React from "react";

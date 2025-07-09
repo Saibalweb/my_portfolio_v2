@@ -1,10 +1,17 @@
-// components/BlogLayout.tsx
-export default function BlogLayout({ frontMatter, children }: { frontMatter: any; children: React.ReactNode }) {
+import Image from "next/image";
+interface IFrontMatter {
+  title: string;
+  date: string;
+  tags?: string[];
+  readingTime: string;
+  image: string;
+}
+export default function BlogLayout({ frontMatter, children }: { frontMatter: IFrontMatter; children: React.ReactNode }) {
   const { title, date, tags, readingTime, image } = frontMatter;
 
   return (
     <div className="max-w-2xl mx-auto px-10 py-8 text-white">
-      <img src={image} alt={title} className="rounded-xl mb-6 w-full" />
+      <Image src={image} alt={title} className="rounded-xl mb-6 w-full" />
       <div className="flex items-center text-sm mb-2 text-gray-400">
         <span>{date}</span>
         <span className="mx-2">•</span>

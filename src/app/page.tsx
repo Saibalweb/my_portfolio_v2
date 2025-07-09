@@ -3,44 +3,43 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
-import { DownloadIcon, GithubIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import React from "react";
-import Image from "next/image";
-import socialLinks from "@/constants/socialLinks";
-import mobileIcon from '../assets/icons/mobile_icon.png'
 import SocialComponent from "@/components/SocialComponent";
+import { skillDetails } from "@/constants/skillsDetails";
+import Image from "next/image";
 export default function Home () {
   // Work experience data
-  const workExperience = [
-    {
-      company: "Trigital Technologies Pvt Ltd",
-      position: "FrontEnd Developer Intern",
-      period: "November 2023-Aug 2024",
-      location: "Remote",
-    },
-  ];
+  // const workExperience = [
+  //   {
+  //     company: "Trigital Technologies Pvt Ltd",
+  //     position: "FrontEnd Developer Intern",
+  //     period: "November 2023-Aug 2024",
+  //     location: "Remote",
+  //   },
+  // ];
 
   // Services data
-  const services = [
-    {
-      title: "Mobile Development",
-      description:
-        "I specialize in mobile app development using React Native and Expo,",
-      icon: mobileIcon,
-    },
-    {
-      title: "Web Development",
-      description:
-        "I excel in web application development with a strong foundation",
-      icon: mobileIcon,
-    },
-    {
-      title: "Mobile Development",
-      description:
-        "I specialize in mobile app development using React Native and Expo,",
-      icon: mobileIcon,
-    },
-  ];
+  // const services = [
+  //   {
+  //     title: "Mobile Development",
+  //     description:
+  //       "I specialize in mobile app development using React Native and Expo,",
+  //     icon: mobileIcon,
+  //   },
+  //   {
+  //     title: "Web Development",
+  //     description:
+  //       "I excel in web application development with a strong foundation",
+  //     icon: mobileIcon,
+  //   },
+  //   {
+  //     title: "Mobile Development",
+  //     description:
+  //       "I specialize in mobile app development using React Native and Expo,",
+  //     icon: mobileIcon,
+  //   },
+  // ];
 
   // Projects data
   const projects = [
@@ -127,7 +126,9 @@ export default function Home () {
           {/* Left side with image */}
           <div className="max-w-7xl  flex flex-col lg:flex-row-reverse items-center justify-center">
           <div className=" w-full flex items-center justify-center">
-            <img
+            <Image
+              width={300}
+              height={300}
               className="w-[300px] h-[300px] lg:w-full lg:h-full object-cover"
               alt="Hero image"
               src="/My_pic.png"
@@ -168,7 +169,7 @@ export default function Home () {
               </Button>
               <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
                 {/* <div className="relative w-7 h-7">
-                  <img
+                  <Image
                     className="absolute w-[25px] h-[23px] top-0.5 left-px"
                     alt="Hire me icon"
                     src="/group-2.png"
@@ -192,24 +193,26 @@ export default function Home () {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {skillDetails.map((skill, index) => (
               <Card
                 key={index}
                 className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-primary rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-4 p-[25px]">
                   <div className="relative h-[82px]">
-                    <img
+                    <Image
                       className="w-11 h-11"
                       alt="Developer icon"
-                      src={service.icon.src}
+                      src={skill.icon}
+                      width={44}
+                      height={44}
                     />
                     <h3 className="absolute top-[53px] left-2 font-medium text-foreground text-2xl font-['Inter',Helvetica]">
-                      {service.title}
+                      {skill.title}
                     </h3>
                   </div>
                   <p className="font-normal text-foreground text-base font-['Inter',Helvetica]">
-                    {service.description}
+                    {skill.content}
                   </p>
                 </CardContent>
               </Card>
@@ -254,10 +257,12 @@ export default function Home () {
                 className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer"
               >
                 <CardContent className="p-0">
-                  <img
+                  <Image
                     className="w-full h-60 object-cover"
                     alt={`${project.title} cover`}
                     src={project.image}
+                    width={480}
+                    height={240}
                   />
 
                   <div className="p-8 pb-12 pt-6">
@@ -310,10 +315,12 @@ export default function Home () {
               >
                 <CardContent className="flex flex-col gap-[17px] p-[30px]">
                   <div className="relative w-[110px] h-[27px]">
-                    <img
+                    <Image
                       className="w-px h-[27px] absolute left-0"
                       alt="Date separator"
                       src="/line-5.svg"
+                      width={1}
+                      height={27}
                     />
                     <p className="absolute top-[5px] left-4 font-normal text-[#c6c6c6] text-sm font-['Inter',Helvetica]">
                       {post.date}
