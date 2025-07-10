@@ -19,28 +19,6 @@ export default function Home () {
   //   },
   // ];
 
-  // Services data
-  // const services = [
-  //   {
-  //     title: "Mobile Development",
-  //     description:
-  //       "I specialize in mobile app development using React Native and Expo,",
-  //     icon: mobileIcon,
-  //   },
-  //   {
-  //     title: "Web Development",
-  //     description:
-  //       "I excel in web application development with a strong foundation",
-  //     icon: mobileIcon,
-  //   },
-  //   {
-  //     title: "Mobile Development",
-  //     description:
-  //       "I specialize in mobile app development using React Native and Expo,",
-  //     icon: mobileIcon,
-  //   },
-  // ];
-
   // Projects data
   const projects = [
     {
@@ -168,13 +146,6 @@ export default function Home () {
                 Resume
               </Button>
               <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
-                {/* <div className="relative w-7 h-7">
-                  <Image
-                    className="absolute w-[25px] h-[23px] top-0.5 left-px"
-                    alt="Hire me icon"
-                    src="/group-2.png"
-                  />
-                </div> */}
                 Hire Me
               </Button>
             </div>
@@ -196,7 +167,7 @@ export default function Home () {
             {skillDetails.map((skill, index) => (
               <Card
                 key={index}
-                className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-primary rounded-[11px]"
+                className="max-w-[450px] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-primary rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-4 p-[25px]">
                   <div className="relative h-[82px]">
