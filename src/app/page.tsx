@@ -178,7 +178,7 @@ export default function Home () {
                       width={44}
                       height={44}
                     />
-                    <h3 className="absolute top-[53px] left-2 font-medium text-foreground text-2xl font-['Inter',Helvetica]">
+                    <h3 className="my-2 font-medium text-foreground text-xl sm:text-2xl font-['Inter',Helvetica]">
                       {skill.title}
                     </h3>
                   </div>
