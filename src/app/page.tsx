@@ -8,6 +8,7 @@ import React from "react";
 import SocialComponent from "@/components/SocialComponent";
 import { skillDetails } from "@/constants/skillsDetails";
 import Image from "next/image";
+import { projects } from "@/constants/projects";
 export default function Home () {
   // Work experience data
   // const workExperience = [
@@ -18,45 +19,6 @@ export default function Home () {
   //     location: "Remote",
   //   },
   // ];
-
-  // Projects data
-  const projects = [
-    {
-      title: "DocRx",
-      description:
-        "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/DocRx_cover.png",
-      technologies: ["Expo", "Node", "Express", "React Native"],
-    },
-    {
-      title: "DocRx",
-      description:
-        "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/DocRx_cover.png",
-      technologies: ["Expo", "Node", "Express", "React Native"],
-    },
-    {
-      title: "DocRx",
-      description:
-        "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/DocRx_cover.png",
-      technologies: ["Expo", "Node", "Express", "React Native"],
-    },
-    {
-      title: "DocRx",
-      description:
-        "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/DocRx_cover.png",
-      technologies: ["Expo", "Node", "Express", "React Native"],
-    },
-    {
-      title: "DocRx",
-      description:
-        "Prescription creation and storage for doctors. Patient information management with secure digital records.",
-      image: "/DocRx_cover.png",
-      technologies: ["Expo", "Node", "Express", "React Native"],
-    },
-  ];
 
   // Blog posts data
   const blogPosts = [
@@ -134,7 +96,7 @@ export default function Home () {
                 Technical Leadership
               </Badge>
               <Badge className="bg-[#f28912] text-[#8b4d07] font-medium px-[22px] py-1 rounded-[5px] text-xs">
-                Technical Leadership
+                Cracked Developer
               </Badge>
               <Badge className="bg-[#21b5f4] text-[#084f6f] font-medium px-[22px] py-1 rounded-[5px] text-xs">
                 Technical Leadership

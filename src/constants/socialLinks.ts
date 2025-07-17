@@ -1,6 +1,10 @@
 import icons from "@/assets/icon";
-
-const socialLinks = [
+export type TSocialLink = {
+  name: string;
+  icon: string;
+  link: string;
+};
+const socialLinks: TSocialLink[] = [
   {
     name: "Github",
     icon: icons.github,
@@ -18,8 +22,4 @@ const socialLinks = [
   },
 ];
 export default socialLinks;
-export type TSocialLink = {
-  name: string;
-  icon: string;
-  link: string;
-};
+
