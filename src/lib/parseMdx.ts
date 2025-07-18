@@ -5,8 +5,6 @@ import React from "react";
 
 const CustomComponent = {
   pre: ({ children }: { children: React.ReactNode }) => {
-    // This is a basic example; for real syntax highlighting, use rehype-highlight
-    // or a dedicated library like react-syntax-highlighter
     return React.createElement(
       "pre",
       { className: "bg-gray-800 text-white p-4 rounded-md overflow-x-auto text-sm my-4" },

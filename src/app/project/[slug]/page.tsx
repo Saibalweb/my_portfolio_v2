@@ -14,7 +14,7 @@ const page = async({
     const {mdxContent} = await parseMdx(decodedContent);
   return (
     <div className='max-w-2xl mx-auto px-10 py-8'>
-      <article className='max-w-none prose dark:prose-invert'>
+      <article className='max-w-none prose dark:prose-invert prose-img:inline prose-img:mx-1 prose-img:my-1'>
         {mdxContent}
       </article>
     </div>

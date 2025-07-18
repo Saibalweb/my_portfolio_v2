@@ -11,7 +11,7 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: IFr
 
   return (
     <div className="max-w-2xl mx-auto px-10 py-8 text-white">
-      <Image src={image} alt={title} className="rounded-xl mb-6 w-full" />
+      <Image src={image} alt={title} className="rounded-xl mb-6 w-full" width={500} height={300}/>
       <div className="flex items-center text-sm mb-2 text-gray-400">
         <span>{date}</span>
         <span className="mx-2">•</span>
