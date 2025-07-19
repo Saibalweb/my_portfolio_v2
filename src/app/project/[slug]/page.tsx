@@ -1,6 +1,11 @@
+import { projects } from '@/constants/projects';
 import { parseMdx } from '@/lib/parseMdx';
 import React from 'react'
-
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.title.toLowerCase().replace(/\s+/g, '-')
+  }));
+}
 const page = async({
   params,
 }: {

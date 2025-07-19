@@ -9,6 +9,7 @@ import SocialComponent from "@/components/SocialComponent";
 import { skillDetails } from "@/constants/skillsDetails";
 import Image from "next/image";
 import { projects } from "@/constants/projects";
+import Link from "next/link";
 export default function Home () {
   // Work experience data
   // const workExperience = [
@@ -72,6 +73,7 @@ export default function Home () {
               className="w-[300px] h-[300px] lg:w-full lg:h-full object-cover"
               alt="Hero image"
               src="/My_pic.png"
+              priority
             />
           </div>
 
@@ -185,6 +187,7 @@ export default function Home () {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center">
             {projects.map((project, index) => (
+              <Link key={index} href={`/project/${project.title.toLowerCase()}`}>
               <Card
                 key={index}
                 className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer"
@@ -228,6 +231,7 @@ export default function Home () {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </section>
