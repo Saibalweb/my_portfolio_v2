@@ -29,6 +29,7 @@ export default function Home () {
       content:
         "A website template is a pre-designed website that can be customized to suit your needs. In this post, we'll take a look at what a website template is and why it can be a great creative outlet for writers",
       isDark: false,
+      href:'/blog/javascript-guide'
     },
     {
       date: "April 12, 2024",
@@ -36,6 +37,8 @@ export default function Home () {
       content:
         "A website template is a pre-designed website that can be customized to suit your needs. In this post, we'll take a look at what a website template is and why it can be a great creative outlet for writers",
       isDark: true,
+      href:'/blog/javascript-guide'
+
     },
   ];
 
@@ -246,8 +249,8 @@ export default function Home () {
           </div>
           <div className="flex flex-col gap-6">
             {blogPosts.map((post, index) => (
+              <Link href={post.href} key={index}>
               <Card
-                key={index}
                 className={`w-4/5 bg-background rounded-[10px] border-none cursor-pointer dark:hover:bg-[#1E1E1E] hover:bg-gray-200`}
               >
                 <CardContent className="flex flex-col gap-[17px] p-[30px]">
@@ -280,6 +283,7 @@ export default function Home () {
                   </Button>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
         </section>

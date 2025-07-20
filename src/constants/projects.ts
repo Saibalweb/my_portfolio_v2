@@ -15,7 +15,7 @@ export const projects: TProject[] = [
     {
       title: "Friendly",
       description:
-        "A Socila Media App where you can connect with other people.User authentication, posts with likes and comments.",
+        "A Socila Media App where you can connect with other people.User authentication, posts with likes",
       image: "/Friendly_cover.webp",
       technologies: ["Expo", "Node", "Express", "React Native"],
     },
