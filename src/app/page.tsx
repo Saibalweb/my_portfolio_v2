@@ -130,14 +130,14 @@ export default function Home () {
             <Separator className="w-[262px] h-[3px] bg-foreground" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
             {skillDetails.map((skill, index) => (
               <Card
                 key={index}
                 className="max-w-[450px] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-primary rounded-[11px]"
               >
-                <CardContent className="flex flex-col gap-4 p-[25px]">
-                  <div className="relative h-[82px]">
+                <CardContent className="flex flex-col gap-2 p-[25px]">
+                  <div className="">
                     <Image
                       className="w-11 h-11"
                       alt="Developer icon"
@@ -145,7 +145,7 @@ export default function Home () {
                       width={44}
                       height={44}
                     />
-                    <h3 className="my-2 font-medium text-foreground text-xl sm:text-2xl font-['Inter',Helvetica]">
+                    <h3 className="my-1 font-medium text-foreground text-xl sm:text-2xl font-['Inter',Helvetica]">
                       {skill.title}
                     </h3>
                   </div>
@@ -188,14 +188,14 @@ export default function Home () {
             <Separator className="w-[257px] h-[3px] bg-foreground" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 place-items-center items-stretch">
             {projects.map((project, index) => (
               <Link key={index} href={`/project/${project.title.toLowerCase()}`}>
               <Card
                 key={index}
-                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer"
+                className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer h-full flex flex-col"
               >
-                <CardContent className="p-0">
+                <CardContent className="p-0 flex flex-col h-full">
                   <Image
                     className="w-full h-60 object-cover"
                     alt={`${project.title} cover`}
@@ -203,16 +203,13 @@ export default function Home () {
                     width={480}
                     height={240}
                   />
-
-                  <div className="p-8 pb-12 pt-6">
+                  <div className="p-8 pb-12 pt-6 flex flex-col flex-1">
                     <h3 className="font-bold text-foreground text-[28px] font-['Montserrat',Helvetica] mb-4">
                       {project.title}
                     </h3>
-
-                    <p className="font-normal text-foreground text-[18px] font-['Montserrat',Helvetica] mb-4">
+                    <p className="font-normal text-foreground text-[18px] font-['Montserrat',Helvetica] mb-4 min-h-[72px]">
                       {project.description}
                     </p>
-
                     <div className="flex flex-wrap gap-2 mb-8">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge
@@ -223,10 +220,9 @@ export default function Home () {
                         </Badge>
                       ))}
                     </div>
-
                     <Button
                       variant="default"
-                      className="dark:bg-[#ffffff26] bg-primary text-background dark:text-foreground text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-cyan-500 dark:hover:bg-[#ffffff40] cursor-pointer"
+                      className="w-[180px] dark:bg-[#ffffff26] bg-primary text-background dark:text-foreground text-xl rounded-[5px] flex items-center gap-1 px-[7px] py-1 hover:bg-cyan-500 dark:hover:bg-[#ffffff40] cursor-pointer"
                     >
                       <GithubIcon className="w-[15px] h-[15px] " />
                       Github
