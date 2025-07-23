@@ -25,7 +25,7 @@ export default function Navbar() {
             className="text-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             prefetch={false}
           >
-            My Works
+            Projects
           </Link>
           <Link
             href="/blog"
