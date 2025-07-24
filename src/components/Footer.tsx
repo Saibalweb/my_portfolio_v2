@@ -1,5 +1,6 @@
 import Link from "next/link"
 import SocialComponent from "./SocialComponent";
+import QuoteCard from "./QuoteCard";
 
 const Footer = () => {
   return (

@@ -1,11 +1,13 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import ThemeDropDown from "./ThemeDropDown";
 import SocialComponent from "./SocialComponent";
-
 export default function Navbar() {
+    const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
   return (
     <header className="sticky top-0 z-50 w-full border-b dark:border-gray-800 bg-background/75">
       <div className="container mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
@@ -35,7 +37,7 @@ export default function Navbar() {
             Blogs
           </Link>
           <Link
-            href="#"
+            href="/contact"
             className="text-lg text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
             prefetch={false}
           >
@@ -50,7 +52,7 @@ export default function Navbar() {
             </span>
           </div>
           <ThemeDropDown />
-          <Sheet>
+          <Sheet open={open}  onOpenChange={setOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
@@ -62,32 +64,37 @@ export default function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="left" className="md:hidden">
+              <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
               <div className="grid gap-6 p-8">
                 <Link
-                  href="#"
+                  href="/"
                   className="text-3xl font-medium text-foreground"
                   prefetch={false}
+                  onClick={handleClose}
                 >
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="/project"
                   className="text-3xl font-medium text-foreground"
                   prefetch={false}
+                  onClick={handleClose}
                 >
-                  My Works
+                  Projects
                 </Link>
                 <Link
-                  href="#"
+                  href="/blog"
                   className="text-3xl font-medium text-foreground"
                   prefetch={false}
+                  onClick={handleClose}
                 >
                   Blogs
                 </Link>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-3xl font-medium text-foreground"
                   prefetch={false}
+                  onClick={handleClose}
                 >
                   Contact
                 </Link>

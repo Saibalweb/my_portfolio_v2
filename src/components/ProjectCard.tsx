@@ -12,7 +12,6 @@ const ProjectCard = ({
 }: {
   project: TProject;
 }) => {
-    console.log(project);
   return (
     <Link href={`/project/${project.title.toLowerCase()}`}>
       <Card

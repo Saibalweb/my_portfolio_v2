@@ -12,7 +12,6 @@ const page = async({
   params: Promise<{ slug: string }>
 }) => {
     const {slug} = await params;
-    console.log(slug);
     const res = await fetch(`https://api.github.com/repos/Saibalweb/${slug}/contents/README.md`);
     const data = await res.json();
     const decodedContent = Buffer.from(data.content, 'base64').toString('utf-8');
