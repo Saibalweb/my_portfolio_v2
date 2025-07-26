@@ -64,15 +64,15 @@ const blogPosts = [
 
 // Blog Post Card Component
 const BlogPostCard = ({ post }: { post: (typeof blogPosts)[0] }) => (
-  <div className="flex flex-col w-full max-w-[361px] mx-auto items-start gap-[11px] pb-3">
+  <div className="flex flex-col w-full max-w-[361px] mx-auto items-start pb-3 cursor-pointer hover:shadow">
     <img
       className="w-full h-[203px] object-cover rounded-t-lg"
       alt="Blog post cover"
       src={post.image}
     />
 
-    <Card className="w-full bg-background rounded-[10px] overflow-hidden border-0">
-      <CardContent className="flex flex-col items-start gap-[17px] px-4 lg:px-[31px] py-6 lg:py-[30px]">
+    <Card className="w-full bg-background rounded-[10px] overflow-hidden border-0 shadow-none">
+      <CardContent className="flex flex-col items-start gap-[17px] px-4 lg:px-[31px] py-6 lg:py-[30px] ">
         <div className="relative flex items-center">
           <div className="w-px h-[27px] bg-[#c6c6c6]"></div>
           <span className="ml-4 font-normal text-sm text-[#c6c6c6] font-sans">
