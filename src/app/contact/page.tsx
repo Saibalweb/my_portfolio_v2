@@ -5,26 +5,33 @@ import React from "react";
 import Image from "next/image";
 import { sendEmail } from "@/lib/email";
 import { contactMe, TContactMe } from "@/constants/contactMe";
-const ContactCard = ({contact}:{contact:TContactMe}) => {
-  const {id,icon,title,description,link,userId} = contact;
-  const handleClick = ()=>{
-    if(id==='email'){
+const ContactCard = ({ contact }: { contact: TContactMe }) => {
+  const { id, icon, title, description, link, userId } = contact;
+  const handleClick = () => {
+    if (id === "email") {
       sendEmail();
       return;
-    }else{
+    } else {
+      if (navigator.vibrate) navigator.vibrate(100);
       window.open(link, "_blank");
     }
-  }
+  };
   return (
-    <Card className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border rounded-[15px] hover:scale-105 transition-transform duration-300 cursor-pointer group" onClick={handleClick}>
+    <Card
+      className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border rounded-[15px] hover:scale-105 transition-transform duration-300 cursor-pointer group"
+      onClick={handleClick}
+      tabIndex={0}
+      role="button"
+      aria-label={`Contact me via ${title}`}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          handleClick();
+        }
+      }}
+    >
       <CardContent className="flex flex-col items-center justify-center p-12 h-[400px] text-center">
         <div className="w-24 h-24  rounded-full flex items-center justify-center mb-8 transition-colors">
-          <Image
-            src={icon}
-            width={70}
-            height={70}
-            alt={`${id}-icon`}
-          />
+          <Image src={icon} width={70} height={70} alt={`${id}-icon`} />
         </div>
 
         <h2 className="font-bold text-foreground text-3xl md:text-4xl font-['Montserrat',Helvetica] mb-6">
@@ -35,12 +42,9 @@ const ContactCard = ({contact}:{contact:TContactMe}) => {
           {description}
         </p>
 
-        <Button
-          className="bg-[#5ac7f8] text-foreground text-xl font-semibold px-8 py-4 rounded-lg hover:bg-[#4ab5e6] transition-colors"
-          onClick={handleClick}
-        >
+        <div className="bg-[#5ac7f8] text-foreground text-xl font-semibold px-8 py-4 rounded-lg hover:bg-[#4ab5e6] transition-colors">
           {userId}
-        </Button>
+        </div>
       </CardContent>
     </Card>
   );
@@ -52,7 +56,7 @@ const page = () => {
       {/* Main Contact Section */}
       <section className="px-6 md:px-24 py-12 ">
         <div className="flex flex-col items-center mb-16">
-          <h1 className="font-semibold text-foreground text-6xl md:text-7xl font-['Montserrat',Helvetica] mb-4 text-center">
+          <h1 className="font-semibold text-foreground text-5xl md:text-5xl font-['Montserrat',Helvetica] mb-4 text-center">
             Get In Touch
           </h1>
           <div className="w-[300px] h-[4px] bg-[#5ac7f8] rounded-full"></div>
