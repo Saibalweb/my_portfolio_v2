@@ -134,7 +134,7 @@ export default function Home() {
             {skillDetails.map((skill, index) => (
               <Card
                 key={index}
-                className="max-w-[450px] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border-primary rounded-[11px]"
+                className="max-w-[450px] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border border-gray-200 dark:border-gray-600 rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-2 p-[25px]">
                   <div className="">
@@ -245,40 +245,40 @@ export default function Home() {
               <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-2 pb-2">
                 Gears
               </h3>
-              <div className="">
-                <div>
-                  <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-2">
-                    Custom Built PC
-                  </h3>
-                  <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
-                    My main machine for development work. Custom built with
-                    high-end specs for optimal performance.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-2">
-                    Cosmic Byte Keyboard
-                  </h3>
-                  <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
-                    My main keyboard for development work. It's a mechanical
-                    keyboard with blue switches.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-2">
-                    Corsair Mouse
-                  </h3>
-                  <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
-                    Corsair mouse for development work. High precision and the
-                    thumb buttons. I use it with a mousepad.
-                  </p>
-                </div>
+
+              <div className="my-3">
+                <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica]  mb-1">
+                  Custom Built PC
+                </h3>
+                <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed mb-1">
+                  My main machine for development work. Custom built with
+                  high-end specs for optimal performance. Specs-Ryzen 3 3300x,
+                  16GB RAM, 512GB SSD, and a GTX 710
+                </p>
+              </div>
+              <div className="my-3">
+                <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-1">
+                  Cosmic Byte Keyboard
+                </h3>
+                <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
+                  My main keyboard for development work. Keyboard with Brown switches.
+                  Keyboard model- Cosmic Byte CB-GK-12 Neon
+                </p>
+              </div>
+              <div className="my-3">
+                <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-1">
+                  Corsair Mouse
+                </h3>
+                <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
+                  Corsair mouse for development work. High precision and the
+                  thumb buttons. I use it with a mousepad.
+                </p>
               </div>
             </aside>
           </div>
         </section>
         <section className="px-12 md:px-24 2xl:px-48 py-12">
-        <QuoteCard />
+          <QuoteCard />
         </section>
       </div>
     </div>

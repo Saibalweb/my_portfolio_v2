@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {Inter,Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Saibal Kole",
-  description: "I am Saibal Kole.Welcome to my portfolio showcasing my skills as a full-stack developer, featuring projects in React, Node.js, MongoDB, and more.",
+  description:
+    "I am Saibal Kole.Welcome to my portfolio showcasing my skills as a full-stack developer, featuring projects in React, Node.js, MongoDB, and more.",
 };
 
 export default function RootLayout({
@@ -28,17 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.variable} ${inter.variable} antialiased`}
       >
         <ThemeProvider
-          attribute={'class'}
+          attribute={"class"}
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
           <Navbar />
           {children}
-          <Footer/>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

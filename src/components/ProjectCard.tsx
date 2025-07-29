@@ -29,7 +29,7 @@ const ProjectCard = ({
             <h3 className="font-bold text-foreground text-[28px] font-['Montserrat',Helvetica] mb-4">
               {project.title}
             </h3>
-            <p className="font-normal text-foreground text-[18px] font-['Montserrat',Helvetica] mb-4 min-h-[72px]">
+            <p className="font-normal text-foreground text-[18px] font-['Inter',Helvetica] mb-4 min-h-[72px]">
               {project.description}
             </p>
             <div className="flex flex-wrap gap-2 mb-8">
