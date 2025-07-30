@@ -13,16 +13,16 @@ const Footer = () => {
           </h3>
           <ul className="space-y-4">
             <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-              <Link href={"#"}>Home</Link>
+              <Link href={"/"}>Home</Link>
             </li>
             <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-              <Link href={"#"}>About Me</Link>
+              <Link href={"/project"}>Projects</Link>
             </li>
             <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-              <Link href={"#"}>My Works</Link>
+              <Link href={"/blog"}>Blogs</Link>
             </li>
             <li className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-              Blogs
+              <Link href={"/contact"}>Contact</Link>
             </li>
           </ul>
         </div>

@@ -24,7 +24,7 @@ export const contactMe: TContactMe[] = [
     description:
       "Stay updated with my latest projects, thoughts on tech, and development insights.",
     link: "https://x.com/SaibalKole",
-    userId: "SaibalKole",
+    userId: "@SaibalKole",
   },
   {
     id: "github",
