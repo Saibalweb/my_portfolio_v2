@@ -1,8 +1,8 @@
-import React from 'react';
-import { SearchIcon } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { projects } from '@/constants/projects';
-import ProjectCard from '@/components/ProjectCard';
+import React from "react";
+import { SearchIcon } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { projects } from "@/constants/projects";
+import ProjectCard from "@/components/ProjectCard";
 const topicTags = [
   { name: "React Native" },
   { name: "Next Js" },
@@ -15,7 +15,7 @@ const topicTags = [
 ];
 const page = () => {
   return (
-        <div className="bg-background flex flex-row justify-center w-full min-h-screen">
+    <div className="bg-background flex flex-row justify-center w-full min-h-screen">
       <div className="bg-background w-full max-w-[1024px] relative">
         <main className="flex flex-col items-center px-4 lg:px-8">
           <section className="w-full mt-11 mb-8">
@@ -32,7 +32,7 @@ const page = () => {
               strategies.
             </p>
           </section>
-{/* 
+          {/* 
           <div className="w-full mb-4">
             <div className="flex items-center gap-2.5 px-[19px] py-3 dark:bg-[#1e1e1e] rounded-[9px] overflow-hidden border-[0.5px] border-solid border-[#21b5f4]">
               <SearchIcon className="w-6 h-6 text-foreground flex-shrink-0 " />
@@ -53,15 +53,15 @@ const page = () => {
             ))}
           </div> */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-12 place-items-center">
             {projects.map((project, index) => (
-              <ProjectCard project={project} key={index}/>
+              <ProjectCard project={project} key={index} />
             ))}
           </div>
         </main>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

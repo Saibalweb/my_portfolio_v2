@@ -15,7 +15,7 @@ const ProjectCard = ({
   return (
     <Link href={`/project/${project.title.toLowerCase()}`}>
       <Card
-        className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border border-t-0 border-l-0 border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer h-full flex flex-col"
+        className="p-0 w-full max-w-[480px] rounded-[10px] overflow-hidden border border-t-0 border-l-0 border-primary [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] cursor-pointer h-full flex flex-col hover:scale-105 transition-transform duration-300"
       >
         <CardContent className="p-0 flex flex-col h-full">
           <Image

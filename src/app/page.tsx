@@ -12,6 +12,8 @@ import { projects } from "@/constants/projects";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import QuoteCard from "@/components/QuoteCard";
+import { sendEmail } from "@/lib/email";
+import { openPDF } from "@/lib/pdf";
 export default function Home() {
   // Work experience data
   // const workExperience = [
@@ -96,7 +98,7 @@ export default function Home() {
                 designing robust and scalable back-end architectures.
               </p>
 
-              <div className="flex flex-wrap gap-4 mt-2">
+              <div className="flex flex-wrap gap-2 mt-2">
                 <Badge className="bg-[#10e649] text-[#0a4f1c] font-medium px-[22px] py-1 rounded-[5px] text-xs">
                   Technical Leadership
                 </Badge>
@@ -109,12 +111,8 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6 mt-4">
-                <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
-                  Resume
-                </Button>
-                <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
-                  Hire Me
-                </Button>
+                <Button onClick={openPDF}>Resume</Button>
+                <Button onClick={sendEmail}>Hire Me</Button>
               </div>
               <SocialComponent className="mt-4" />
             </div>
@@ -261,8 +259,8 @@ export default function Home() {
                   Cosmic Byte Keyboard
                 </h3>
                 <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
-                  My main keyboard for development work. Keyboard with Brown switches.
-                  Keyboard model- Cosmic Byte CB-GK-12 Neon
+                  My main keyboard for development work. Keyboard with Brown
+                  switches. Keyboard model- Cosmic Byte CB-GK-12 Neon
                 </p>
               </div>
               <div className="my-3">
