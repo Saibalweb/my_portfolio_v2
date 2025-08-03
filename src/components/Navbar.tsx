@@ -100,10 +100,10 @@ export default function Navbar() {
                 </Link>
               </div>
               <div className="flex flex-col sm:flex-row gap-6 mt-4 mx-8">
-                <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+                <Button>
                   Resume
                 </Button>
-                <Button className="bg-primary text-white text-[28px] font-medium px-8 py-6 rounded-sm flex items-center gap-2.5 cursor-pointer">
+                <Button>
                   Hire Me
                 </Button>
               </div>
