@@ -2,18 +2,17 @@
 
 A full-featured portfolio website built using **Next.js (App Router)** with TypeScript, Tailwind CSS, and MDX. This portfolio includes pages for Home, Blog, Projects, and Contact — designed to showcase your skills, articles, and resume in a professional and responsive layout.
 
----
 
-## 🔧 Tech Stack
+## Built with 
 
-- **Framework**: [Next.js 13+ (App Router)](https://nextjs.org/)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Markdown Rendering**: MDX
-- **Email API**: Nodemailer / Resend (via `lib/email.ts`)
-- **Deployment**: Vercel (recommended)
-- **Assets**: WebP, SVGs, PNGs
-- **Blog**: File-based Markdown (in `/posts`)
+<div>
+   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="ts" />
+   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+   <img src="https://img.shields.io/badge/next%20js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt='tailwind'/> 
+  <img src="https://img.shields.io/badge/MDX-1B1F24?style=for-the-badge&logo=mdx&logoColor=white" alt='mdx'/> 
+
+</div>
 
 ---
 
@@ -44,57 +43,6 @@ A full-featured portfolio website built using **Next.js (App Router)** with Type
 - Button component: `ContactButtonHome.tsx`
 
 ---
-
-## 📁 Project Structure
-.
-├── public/ # Static assets
-│ ├── My_pic.png
-│ ├── Friendly_cover.webp
-│ ├── globe.svg, next.svg, etc.
-│ └── SaibalKole_resume.pdf
-├── src/
-│ ├── app/
-│ │ ├── page.tsx # Home page
-│ │ ├── blog/
-│ │ │ ├── page.tsx # Blog list
-│ │ │ └── [slug]/ # Dynamic blog details
-│ │ │ ├── page.tsx
-│ │ │ └── loading.tsx
-│ │ ├── project/
-│ │ │ └── page.tsx
-│ │ ├── contact/
-│ │ │ └── page.tsx
-│ │ ├── layout.tsx
-│ │ └── globals.css
-│ ├── components/
-│ │ ├── Footer.tsx
-│ │ ├── MDXContent.tsx
-│ │ └── ui/
-│ │ ├── BlogLayout.tsx
-│ │ ├── ContactButtonHome.tsx
-├── constants/ # Data files
-│ ├── contactMe.ts
-│ ├── projects.ts
-│ ├── skillsDetails.ts
-│ └── socialLinks.ts
-├── lib/ # Utilities & logic
-│ ├── email.ts
-│ ├── getAllPosts.ts
-│ ├── getPostBySlug.ts
-│ ├── parseMdx.ts
-│ ├── pdf.ts
-│ └── utils.ts
-├── posts/ # Blog markdown content
-│ ├── introduction-to-generative-ai.md
-│ ├── javascript-guide.md
-│ └── react-native-beginner-guide.md
-├── .env # Environment variables
-├── README.md # You are here
-├── next.config.ts
-├── tsconfig.json
-├── package.json
-└── other config files...
-
 
 ## Learn More
 
