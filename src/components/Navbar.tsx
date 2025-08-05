@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import ThemeDropDown from "./ThemeDropDown";
 import SocialComponent from "./SocialComponent";
+import { Contact } from "lucide-react";
+import ContactButtonHome from "./ContactButtonHome";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
   const handleClose = () => setOpen(false);
@@ -99,14 +101,7 @@ export default function Navbar() {
                   Contact
                 </Link>
               </div>
-              <div className="flex flex-col sm:flex-row gap-6 mt-4 mx-8">
-                <Button>
-                  Resume
-                </Button>
-                <Button>
-                  Hire Me
-                </Button>
-              </div>
+              <ContactButtonHome className="mx-8" />
               <SocialComponent className="p-8 mt-auto mb-6" />
             </SheetContent>
           </Sheet>

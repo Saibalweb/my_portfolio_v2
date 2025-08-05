@@ -1,4 +1,4 @@
-"use client";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,9 +12,9 @@ import { projects } from "@/constants/projects";
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import QuoteCard from "@/components/QuoteCard";
-import { sendEmail } from "@/lib/email";
-import { openPDF } from "@/lib/pdf";
-export default function Home() {
+import ContactButtonHome from "@/components/ContactButtonHome";
+import { getAllPostsMeta } from "@/lib/getAllPosts";
+export default async function Home() {
   // Work experience data
   // const workExperience = [
   //   {
@@ -26,24 +26,8 @@ export default function Home() {
   // ];
 
   // Blog posts data
-  const blogPosts = [
-    {
-      date: "April 10, 2024",
-      title: "What is Website template",
-      content:
-        "A website template is a pre-designed website that can be customized to suit your needs. In this post, we'll take a look at what a website template is and why it can be a great creative outlet for writers",
-      isDark: false,
-      href: "/blog/javascript-guide",
-    },
-    {
-      date: "April 12, 2024",
-      title: "What is Blog template",
-      content:
-        "A website template is a pre-designed website that can be customized to suit your needs. In this post, we'll take a look at what a website template is and why it can be a great creative outlet for writers",
-      isDark: true,
-      href: "/blog/javascript-guide",
-    },
-  ];
+  const blogPosts = getAllPostsMeta(2);
+  console.log(blogPosts);
 
   // Skills data
   const skills = [
@@ -109,11 +93,7 @@ export default function Home() {
                   Technical Leadership
                 </Badge>
               </div>
-
-              <div className="flex flex-col sm:flex-row gap-6 mt-4">
-                <Button onClick={openPDF}>Resume</Button>
-                <Button onClick={sendEmail}>Hire Me</Button>
-              </div>
+              <ContactButtonHome />
               <SocialComponent className="mt-4" />
             </div>
           </div>
@@ -205,7 +185,7 @@ export default function Home() {
             <div className="lg:w-2/3">
               <div className="flex flex-col gap-6">
                 {blogPosts.map((post, index) => (
-                  <Link href={post.href} key={index}>
+                  <Link href={`/blog/${post.slug}`} key={index}>
                     <Card
                       className={`bg-background rounded-[10px] border-none cursor-pointer dark:hover:bg-[#1E1E1E] hover:bg-gray-200`}
                     >
@@ -222,7 +202,7 @@ export default function Home() {
                         </h3>
 
                         <p className="font-normal text-foreground text-base font-['Inter',Helvetica]">
-                          {post.content}
+                          {post.subtitle}
                         </p>
 
                         <Button
