@@ -1,24 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧑‍💻 Fullstack Portfolio Website — Built with Next.js (App Router)
 
-## Getting Started
+A full-featured portfolio website built using **Next.js (App Router)** with TypeScript, Tailwind CSS, and MDX. This portfolio includes pages for Home, Blog, Projects, and Contact — designed to showcase your skills, articles, and resume in a professional and responsive layout.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔧 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Framework**: [Next.js 13+ (App Router)](https://nextjs.org/)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Markdown Rendering**: MDX
+- **Email API**: Nodemailer / Resend (via `lib/email.ts`)
+- **Deployment**: Vercel (recommended)
+- **Assets**: WebP, SVGs, PNGs
+- **Blog**: File-based Markdown (in `/posts`)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Pages & Features
+
+### 🏠 Home Page
+- Introduction & profile image
+- Resume download (`/public/SaibalKole_resume.pdf`)
+- Navigation to all sections
+- Contact button
+
+### 📚 Blog Page
+- Dynamic blog rendering from markdown files in `/posts`
+- Slugs handled via dynamic route: `/app/blog/[slug]/page.tsx`
+- Custom blog layout in `components/ui/BlogLayout.tsx`
+- MDX support via `lib/parseMdx.ts`
+- Syntax highlighting & metadata
+
+### 💼 Projects Page
+- Projects stored in `constants/projects.ts`
+- Rendered on `/app/project/page.tsx`
+- Includes title, description, stack, links
+
+### 📬 Contact Page
+- Form with validation
+- Sends email via API using `lib/email.ts`
+- Contact info via `constants/contactMe.ts`
+- Button component: `ContactButtonHome.tsx`
+
+---
+
+## 📁 Project Structure
+.
+├── public/ # Static assets
+│ ├── My_pic.png
+│ ├── Friendly_cover.webp
+│ ├── globe.svg, next.svg, etc.
+│ └── SaibalKole_resume.pdf
+├── src/
+│ ├── app/
+│ │ ├── page.tsx # Home page
+│ │ ├── blog/
+│ │ │ ├── page.tsx # Blog list
+│ │ │ └── [slug]/ # Dynamic blog details
+│ │ │ ├── page.tsx
+│ │ │ └── loading.tsx
+│ │ ├── project/
+│ │ │ └── page.tsx
+│ │ ├── contact/
+│ │ │ └── page.tsx
+│ │ ├── layout.tsx
+│ │ └── globals.css
+│ ├── components/
+│ │ ├── Footer.tsx
+│ │ ├── MDXContent.tsx
+│ │ └── ui/
+│ │ ├── BlogLayout.tsx
+│ │ ├── ContactButtonHome.tsx
+├── constants/ # Data files
+│ ├── contactMe.ts
+│ ├── projects.ts
+│ ├── skillsDetails.ts
+│ └── socialLinks.ts
+├── lib/ # Utilities & logic
+│ ├── email.ts
+│ ├── getAllPosts.ts
+│ ├── getPostBySlug.ts
+│ ├── parseMdx.ts
+│ ├── pdf.ts
+│ └── utils.ts
+├── posts/ # Blog markdown content
+│ ├── introduction-to-generative-ai.md
+│ ├── javascript-guide.md
+│ └── react-native-beginner-guide.md
+├── .env # Environment variables
+├── README.md # You are here
+├── next.config.ts
+├── tsconfig.json
+├── package.json
+└── other config files...
+
 
 ## Learn More
 
