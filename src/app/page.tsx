@@ -13,6 +13,8 @@ import ProjectCard from "@/components/ProjectCard";
 import QuoteCard from "@/components/QuoteCard";
 import ContactButtonHome from "@/components/ContactButtonHome";
 import { getAllPostsMeta } from "@/lib/getAllPosts";
+import { WorkExperience } from "@/components/work-experience";
+import { workExperience } from "@/constants/workExp";
 export default async function Home() {
   // Work experience data
   // const workExperience = [
@@ -96,7 +98,9 @@ export default async function Home() {
             </div>
           </div>
         </section>
-
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
+          <WorkExperience experiences={workExperience}/>
+        </section>
         {/* What I Do Section */}
         <section className="px-12 md:px-24 2xl:px-48 py-12">
           <div className="flex flex-col items-center mb-12">
