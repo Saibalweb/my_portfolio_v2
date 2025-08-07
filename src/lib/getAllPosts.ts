@@ -34,4 +34,3 @@ export function getAllPostsMeta(limit?: number): BlogMeta[] {
   }
   return allPosts;
 }
-const postsMeta = getAllPostsMeta();

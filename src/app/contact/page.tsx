@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { sendEmail } from "@/lib/email";
 import { contactMe, TContactMe } from "@/constants/contactMe";
+
 const ContactCard = ({ contact }: { contact: TContactMe }) => {
   const { id, icon, title, description, link, userId } = contact;
   const handleClick = () => {
@@ -60,7 +61,7 @@ const page = () => {
           </h1>
           <div className="w-[300px] h-[4px] bg-[#5ac7f8] rounded-full"></div>
           <p className="font-normal text-foreground text-xl md:text-2xl font-['Inter',Helvetica] mt-8 text-center max-w-3xl">
-            Ready to bring your ideas to life? Let's connect and discuss how we
+            Ready to bring your ideas to life? Let&quot;s connect and discuss how we
             can work together to create something amazing.
           </p>
         </div>
@@ -77,12 +78,12 @@ const page = () => {
           <Card className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border- rounded-[15px] max-w-4xl mx-auto">
             <CardContent className="p-12">
               <h3 className="font-bold text-foreground text-3xl font-['Montserrat',Helvetica] mb-6">
-                Let's Build Something Great Together
+                Let&quot;s Build Something Great Together
               </h3>
               <p className="font-normal text-foreground text-xl font-['Inter',Helvetica] leading-relaxed mb-8">
-                I'm always excited to work on new projects and collaborate with
+                I&quot;m always excited to work on new projects and collaborate with
                 amazing people. Whether you have a specific project in mind or
-                just want to chat about technology, don't hesitate to reach out!
+                just want to chat about technology, don&apos;t hesitate to reach out!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <div className="flex items-center gap-3">

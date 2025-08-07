@@ -1,18 +1,36 @@
 import React from "react";
-import { SearchIcon } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { projects } from "@/constants/projects";
 import ProjectCard from "@/components/ProjectCard";
-const topicTags = [
-  { name: "React Native" },
-  { name: "Next Js" },
-  { name: "Expo" },
-  { name: "Tailwind" },
-  { name: "React Native" },
-  { name: "Next Js" },
-  { name: "Expo" },
-  { name: "Tailwind" },
-];
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects | Saibal Kole",
+  description:
+    "Explore my projects showcasing my skills in React Native, Next.js, and full-stack development.",
+  openGraph: {
+    title: "Saibal Kole - Projects",
+    description:
+      "Explore my projects showcasing my skills in React Native, Next.js, and full-stack development.",
+    url: "https://saibal.dev/project",
+    siteName: "Saibal Kole's Portfolio",
+    images: [
+      {
+        url: "https://saibal.dev/MetaImg/project-meta.png",
+        width: 1200,
+        height: 630,
+        alt: "Saibal Kole - Projects",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Saibal Kole - Projects",
+    description:
+      "Explore my projects showcasing my skills in React Native, Next.js, and full-stack development.",
+    images: ["https://saibal.dev/MetaImg/project-meta.png"],
+    site: "@SaibalKole",
+  },
+};
 const page = () => {
   return (
     <div className="bg-background flex flex-row justify-center w-full min-h-screen">
@@ -24,34 +42,9 @@ const page = () => {
             </h1>
 
             <p className="text-lg lg:text-xl text-foreground font-['Inter',Helvetica] font-normal leading-relaxed">
-              I have a passion for blogging, primarily focusing on topics such
-              as technology, success, and spirituality. However, my main
-              emphasis is on technology, and my content consistently addresses
-              the common challenges encountered in software engineering. I delve
-              into subjects like overcoming failure and problem-solving
-              strategies.
+              Welcome to my project showcase. This collection features the React Native mobile apps and full-stack web applications I have built—each one reflecting my focus on performance, clean UI, and real-world usability. From frontend interfaces to backend integrations, these projects demonstrate my ability to craft end-to-end solutions and solve real development challenges.
             </p>
           </section>
-          {/* 
-          <div className="w-full mb-4">
-            <div className="flex items-center gap-2.5 px-[19px] py-3 dark:bg-[#1e1e1e] rounded-[9px] overflow-hidden border-[0.5px] border-solid border-[#21b5f4]">
-              <SearchIcon className="w-6 h-6 text-foreground flex-shrink-0 " />
-              <input
-              placeholder="Search Article"
-              className="border-none outline-none w-full dark:bg-[#1e1e1e]"
-              />
-            </div>
-          </div>
-          <div className="w-full flex flex-wrap mb-8">
-            {topicTags.map((tag, index) => (
-              <Badge
-                key={`tag-${index}`}
-                className="mx-1 my-1 py-2 px-4 dark:bg-[#403f3f] text-foreground text-xs lg:text-sm text-centerborder-[0.5px] border-solid border-white rounded-full hover:bg-[#403f3f] justify-center cursor-pointer"
-              >
-                {tag.name}
-              </Badge>
-            ))}
-          </div> */}
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full mb-12 place-items-center">
             {projects.map((project, index) => (

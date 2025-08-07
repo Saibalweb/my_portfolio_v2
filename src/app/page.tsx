@@ -3,7 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
-import { GithubIcon } from "lucide-react";
 import React from "react";
 import SocialComponent from "@/components/SocialComponent";
 import { skillDetails } from "@/constants/skillsDetails";
@@ -27,7 +26,6 @@ export default async function Home() {
 
   // Blog posts data
   const blogPosts = getAllPostsMeta(2);
-  console.log(blogPosts);
 
   // Skills data
   const skills = [
@@ -249,7 +247,18 @@ export default async function Home() {
                 </h3>
                 <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
                   Corsair mouse for development work. High precision and the
-                  thumb buttons. I use it with a mousepad.
+                  thumb buttons. I use it with a mousepad. Mouse model- Corsair
+                  Harpoon RGB.
+                </p>
+              </div>
+              <div className="my-3">
+                <h3 className="font-semibold text-foreground text-xl font-['Inter',Helvetica] mb-1">
+                  Two Monitors
+                </h3>
+                <p className="font-normal text-foreground text-sm font-['Inter',Helvetica] leading-relaxed">
+                  I have two monitors for development work. One is a 21-inch
+                  monitor and the other is a 18-inch monitor. I use them for
+                  multitasking and productivity. 
                 </p>
               </div>
             </aside>

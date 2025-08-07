@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import ThemeDropDown from "./ThemeDropDown";
 import SocialComponent from "./SocialComponent";
-import { Contact } from "lucide-react";
 import ContactButtonHome from "./ContactButtonHome";
 export default function Navbar() {
     const [open, setOpen] = useState(false);
@@ -50,7 +49,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-2 text-sm font-medium md:flex">
             <PhoneIcon className="h-5 w-5 text-gray-500 dark:text-gray-400" />
             <span className="text-gray-500 dark:text-gray-400">
-              123-456-7890
+             (+91) 8116658972
             </span>
           </div>
           <ThemeDropDown />
