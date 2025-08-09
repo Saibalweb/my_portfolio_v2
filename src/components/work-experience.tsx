@@ -106,9 +106,9 @@ export function ExperienceItem({
           )}
         </div>
 
-        <h3 className="text-lg leading-snug font-medium">
+        <h2 className="text-2xl leading-snug font-medium">
           {experience.companyName}
-        </h3>
+        </h2>
 
         {experience.isCurrentEmployer && (
           <span className="relative flex items-center justify-center">
@@ -147,9 +147,9 @@ export function ExperiencePositionItem({
               <ExperienceIcon className="size-4" />
             </div>
 
-            <h2 className="flex-1 text-base font-medium text-balance">
+            <h3 className="flex-1 text-xl font-medium text-balance">
               {position.title}
-            </h2>
+            </h3>
 
             <div
               className="shrink-0 text-muted-foreground [&_svg]:size-4"
@@ -184,7 +184,7 @@ export function ExperiencePositionItem({
 
         <CollapsibleContent className="overflow-hidden duration-300 data-[state=closed]:animate-collapsible-up data-[state=open]:animate-collapsible-down">
           {position.description && (
-            <Prose className="pt-2 pl-9">
+            <Prose className="pt-2 pl-9 text-base">
               <ReactMarkdown>{position.description}</ReactMarkdown>
             </Prose>
           )}
