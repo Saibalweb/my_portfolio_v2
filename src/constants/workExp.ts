@@ -10,7 +10,7 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
       {
         id: "1-1",
         title: "FrontEnd Software Engineer",
-        employmentPeriod: "Feb 2024 - Dec 2024",
+        employmentPeriod: "Feb 2024 - Feb 2025",
         employmentType: "Full-time",
         description: `- Architected and executed seamless updates for CashMe, Calonex, and eParisheva, enhancing user experience and functionality; achieved a 40% decrease in reported app crashes, improving overall user satisfaction.
 - Created visually appealing and functional UI designs utilizing React Native; recognized as most junior member on team contributing innovative solutions resulting in reduced bounce rates of application.
