@@ -10,13 +10,12 @@ const QuoteCard = () => {
         alt="Quote Icon"
         width={80}
         height={80}
-        className="mb-4 absolute left-10  opacity-30 dark:invert dark:opacity-70"
+        className="mb-4 absolute left-10  opacity-30 dark:invert dark:opacity-50"
         />
       <blockquote className="text-foreground">
-        “A man who is master of patience is master of everything else. Lorem
-        ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, saepe?”
+        “Making a choice that is 1 percent better or 1 percent worse seems insignificant in the moment, but over the span of moments that make up a lifetime these choices determine the difference between who you are and who you could be. Success is the product of daily habits—not once-in-a-lifetime transformations.”
       </blockquote>
-      <p className="text-primary mt-2">- George Savile</p>
+      <p className="text-primary text-lg mt-2">- James Clear, Author of Atomic Habit</p>
     </div>
   );
 };

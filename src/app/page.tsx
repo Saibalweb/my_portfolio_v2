@@ -61,7 +61,7 @@ export default async function Home() {
                 height={300}
                 className="w-[300px] h-[300px] lg:w-full lg:h-full object-cover"
                 alt="Hero image"
-                src="/My_pic.png"
+                src="/My_pic.webp"
                 priority
               />
             </div>
@@ -90,7 +90,7 @@ export default async function Home() {
                   Cracked Developer
                 </Badge>
                 <Badge className="bg-[#21b5f4] text-[#084f6f] font-medium px-[22px] py-1 rounded-[5px] text-xs">
-                  Technical Leadership
+                  Vibe coder
                 </Badge>
               </div>
               <ContactButtonHome />
@@ -268,7 +268,7 @@ export default async function Home() {
             </aside>
           </div>
         </section>
-        <section className="px-12 md:px-24 2xl:px-48 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px]">
           <QuoteCard />
         </section>
       </div>
