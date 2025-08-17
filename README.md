@@ -1,3 +1,4 @@
+![My_portfolio_v2_img](https://raw.githubusercontent.com/Saibalweb/my_portfolio_v2/main/public/MetaImg/home-meta.png)
 # 🧑‍💻 Fullstack Portfolio Website — Built with Next.js (App Router)
 
 A full-featured portfolio website built using **Next.js (App Router)** with TypeScript, Tailwind CSS, and MDX. This portfolio includes pages for Home, Blog, Projects, and Contact — designed to showcase your skills, articles, and resume in a professional and responsive layout.
