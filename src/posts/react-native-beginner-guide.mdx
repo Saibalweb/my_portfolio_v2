@@ -1,18 +1,95 @@
 ---
-title: "React Native Beginner Guide."
-subtitle: "A website template is a pre-designed website that can be customized to suit your needs. In this post, we'll take a look at what a website template is and why it can be a great creative outlet for writers"
+title: "React Native Beginner Guide"
+subtitle: "React Native is an open-source framework developed by Facebook for building mobile applications using JavaScript and React."
 date: "June 31, 2025"
-readingTime: "8 min read"
-tags: ["React Native", "JavaScript", "Website", "Hooks.js"]
+readingTime: "15 min read"
+tags: ["JavaScript", "React Native", "React Js", "Mobile Development", "Cross platform Dev"]
 image: "/Blogs/react-native-guide.png"
 ---
 
 ## What is React Native?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+React Native is an open-source framework developed by Facebook for building mobile applications using JavaScript and React. It allows developers to create cross-platform apps for iOS and Android with a single codebase, leveraging the power of React to build user interfaces. React Native combines the best parts of native development with React, enabling a smooth and efficient development process.
 
-## How to benefit from template?
+## Prequisite for learning React Native
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+There are some prequisite to learn React Native these are
+- Html & css
+- JavaScript
+- React Js 
 
-Lorem ipsum dolor sit amet...
+Also the fact that react native does not directly use **Html** and **css**. But the way you have to use react native ui components for **view** it will be better if you have little knowledge of html. And also in React native  css is not used directly but you can use css styling with js **style props** just like you can use style props while building websites. And ovbioulsy you need good concept of basic JavaScript and React js because React native is library build with JavaScript .It  also needed almost all of  **React js** functionallity (state,sideeffect etc.). 
+
+## React Js vs React Native 
+Now you are wondering what is difference between React js and React Native. And why do we need to learn React to work with React Native. Lets explain you clearly!
+
+React Js is open source Js library for creating fast, single page ,dynamic mordern day web apps.In fact its one of the most popular Js library used to build websites nowadays.At ground level react js use html, css to render view in browser. 
+
+In mobile app you cannot use html to create view. In Android development, you write views in Kotlin or Java; in iOS development, you use Swift or Objective-C.
+With React Native, you can invoke these views with JavaScript using React components. At runtime, React Native creates the corresponding Android and iOS views for those components.
+
+So basically React native basically a library built on top of react js which can use many of react js methods and on top of that it creates view corresponding to the mobile platform and also it can accesss native modules for creating seamless user experience.
+
+## Environment Setup & getting started
+
+There are two ways to setup React Native environment. One is using **Expo** and another is using **React Native CLI**.
+But I suggest you to use **Expo** for getting started with React Native. Because it is very easy to setup and you can start building your first app in minutes.
+
+To get started with React Native using **Expo**, follow these steps:
+1. **Install Node.js**: Make sure you have Node.js installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
+2. **Create a new Expo project**: Run the following command in your terminal:
+   ```
+   npx create-expo-app my-new-project
+   ```
+
+## React Native components
+
+These components are the building blocks of React Native applications. They are similar to HTML elements in web development and can be combined to create complex user interfaces. Some commonly used components include:
+    - View
+    - Text
+    - Image
+    - ScrollView
+    - FlatList
+
+Use these components to create your app's layout and structure.
+
+## Styling in React Native
+
+In React Native, you can style your components using **StyleSheet**. It is similar to CSS in web development but with some differences. You can use the **StyleSheet.create()** method to create styles and apply them to your components using the **style** prop.
+
+## Default layout
+
+In React Native, the default layout is flexbox, and the default flex direction is column. This means that all child components will be arranged in a column by default. You can change the flex direction to row if you want to arrange the components in a row.
+
+## Example 
+
+```jsx
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Hello, React Native!</Text>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+  },
+});
+
+export default App;
+```
+
+## Conclusion
+
+In conclusion, React Native is a powerful framework for building cross-platform mobile applications using JavaScript and React. By understanding the key concepts and components of React Native, you can create high-quality mobile apps that run on both iOS and Android devices. With its rich ecosystem and community support, React Native is an excellent choice for developers looking to expand their skill set and create modern mobile applications.

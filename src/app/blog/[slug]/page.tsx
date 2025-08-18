@@ -1,4 +1,5 @@
 import BlogLayout from '@/components/BlogLayout';
+import { getAllPostsMeta } from '@/lib/getAllPosts';
 import { getPostBySlug } from '@/lib/getPostbySlug';
 import { Metadata } from 'next';
 import React from 'react';
@@ -36,6 +37,12 @@ export async function generateMetadata({
     },
   };
 }
+export async function generateStaticParams() {
+  const posts = getAllPostsMeta();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+};
 const page = async({
   params,
 }: {

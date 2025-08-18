@@ -1,4 +1,3 @@
-import { SearchIcon } from "lucide-react";
 import React from "react";
 import { Badge } from "../../components/ui/badge";
 import { Card, CardContent } from "../../components/ui/card";
@@ -110,7 +109,7 @@ const page = async () => {
             </p>
           </section>
 
-          <div className="w-full mb-4">
+          {/* <div className="w-full mb-4">
             <div className="flex items-center gap-2.5 px-[19px] py-3 dark:bg-[#1e1e1e] rounded-[9px] overflow-hidden border-[0.5px] border-solid border-[#21b5f4]">
               <SearchIcon className="w-6 h-6 text-foreground flex-shrink-0 " />
               <input
@@ -118,7 +117,7 @@ const page = async () => {
                 className="border-none outline-none w-full dark:bg-[#1e1e1e]"
               />
             </div>
-          </div>
+          </div> */}
           <div className="w-full flex flex-wrap mb-8">
             {topicTags.map((tag, index) => (
               <Badge

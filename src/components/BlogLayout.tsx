@@ -27,7 +27,7 @@ export default function BlogLayout({ frontMatter, children }: { frontMatter: IFr
         )):null}
       </div>
 
-      <article className="prose dark:prose-invert max-w-none">{children}</article>
+      <article className="prose dark:prose-invert dark:prose-pre:bg-[#0f172a]">{children}</article>
     </div>
   );
 }
