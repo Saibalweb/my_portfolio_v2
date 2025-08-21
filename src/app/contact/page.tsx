@@ -18,7 +18,7 @@ const ContactCard = ({ contact }: { contact: TContactMe }) => {
   };
   return (
     <Card
-      className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border rounded-[15px] hover:scale-105 transition-transform duration-300 cursor-pointer group"
+      className="bg-gradient border rounded-[15px] hover:scale-105 transition-transform duration-300 cursor-pointer group"
       onClick={handleClick}
       tabIndex={0}
       role="button"
@@ -75,7 +75,7 @@ const page = () => {
 
         {/* Additional Contact Info */}
         <div className="mt-20 text-center">
-          <Card className="[background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border- rounded-[15px] max-w-4xl mx-auto">
+          <Card className="bg-gradient border- rounded-[15px] max-w-4xl mx-auto">
             <CardContent className="p-12">
               <h3 className="font-bold text-foreground text-3xl font-['Montserrat',Helvetica] mb-6">
                 Let&quot;s Build Something Great Together

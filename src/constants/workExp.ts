@@ -29,7 +29,7 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
           "MongoDB",
           "Firebase",
         ],
-        isExpanded: true,
+        isExpanded: false,
       },
       {
         id: "1-2",

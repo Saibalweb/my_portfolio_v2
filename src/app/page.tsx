@@ -15,39 +15,9 @@ import ContactButtonHome from "@/components/ContactButtonHome";
 import { getAllPostsMeta } from "@/lib/getAllPosts";
 import { WorkExperience } from "@/components/work-experience";
 import { workExperience } from "@/constants/workExp";
+import { techSkills } from "@/constants/techSkills";
 export default async function Home() {
-  // Work experience data
-  // const workExperience = [
-  //   {
-  //     company: "Trigital Technologies Pvt Ltd",
-  //     position: "FrontEnd Developer Intern",
-  //     period: "November 2023-Aug 2024",
-  //     location: "Remote",
-  //   },
-  // ];
-
-  // Blog posts data
   const blogPosts = getAllPostsMeta(2);
-
-  // Skills data
-  const skills = [
-    "React",
-    "Angular",
-    "Express",
-    "Next.js",
-    "Figma",
-    "Node.js",
-    "Redux",
-    "TypeScript",
-    "React",
-    "MongoDB",
-    "Express",
-    "Next.js",
-    "Figma",
-    "Node.js",
-    "Redux",
-    "TypeScript",
-  ];
   return (
     <div className="flex flex-row justify-center w-full">
       <div className="">
@@ -69,11 +39,11 @@ export default async function Home() {
             {/* Right side with text content */}
             <div className="w-full md:w-full flex flex-col gap-6 mt-8 md:mt-0">
               <h1 className="font-semibold text-foreground text-4xl font-['Inter',Helvetica]">
-                Full Stack Developer
+                Software Developer
               </h1>
 
               <p className="font-normal text-foreground text-xl font-['Inter',Helvetica]">
-                I&apos;m a dedicated full-stack developer with expertise in
+                I&apos;m a dedicated software developer with expertise in
                 React JS, React Native, and backend technologies like Express,
                 MongoDB, SQL, and Docker.
                 <br />
@@ -114,7 +84,7 @@ export default async function Home() {
             {skillDetails.map((skill, index) => (
               <Card
                 key={index}
-                className="max-w-[450px] [background:linear-gradient(135deg,rgba(90,199,248,0.29)_0%,rgba(90,199,248,0)_100%)] border border-gray-200 dark:border-gray-600 rounded-[11px]"
+                className="max-w-[450px] bg-gradient border border-gray-200 dark:border-gray-600 rounded-[11px]"
               >
                 <CardContent className="flex flex-col gap-2 p-[25px]">
                   <div className="">
@@ -148,10 +118,10 @@ export default async function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            {skills.map((skill, index) => (
+            {techSkills.map((skill, index) => (
               <Badge
                 key={index}
-                className="bg-[#084f6f] text-white px-4 py-2 text-sm rounded"
+                className="bg-gradient text-foreground border border-gray-200 dark:border-gray-600 px-4 py-2 text-sm rounded"
               >
                 {skill}
               </Badge>

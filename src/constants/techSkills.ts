@@ -1,0 +1,22 @@
+  export const techSkills:Array<string> = [
+    "TypeScript",
+    "Javascript",
+    "React",
+    "React Native",
+    "Redux",
+    "Expo",
+    "Angular",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "Figma",
+    "UI/UX",
+    "MongoDB",
+    "Postgresql",
+    "Supabase",
+    "Firebase",
+    "Nginx",
+    "Docker",
+    "Kubernetes",
+    "AWS"
+  ];
