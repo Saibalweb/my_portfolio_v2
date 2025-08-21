@@ -52,7 +52,7 @@ const ContactCard = ({ contact }: { contact: TContactMe }) => {
 
 const page = () => {
   return (
-    <div className="bg-transparent flex flex-row justify-center w-full max-w-[1800px] min-h-screen">
+    <div className="bg-transparent flex flex-row justify-center w-full max-w-[1800px] min-h-screen mx-auto">
       {/* Main Contact Section */}
       <section className="px-6 md:px-24 py-12 ">
         <div className="flex flex-col items-center mb-16">

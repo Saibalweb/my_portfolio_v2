@@ -72,7 +72,7 @@ export default async function Home() {
           <WorkExperience experiences={workExperience}/>
         </section>
         {/* What I Do Section */}
-        <section className="px-12 md:px-24 2xl:px-48 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               What I Do
@@ -109,7 +109,7 @@ export default async function Home() {
         </section>
 
         {/* My Skills Section */}
-        <section className="px-12 md:px-24 2xl:px-48 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               My Skills
@@ -130,7 +130,7 @@ export default async function Home() {
         </section>
 
         {/* My Works Section */}
-        <section className="px-12 md:px-24 2xl:px-48 py-12">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica] mb-2">
               My Works
@@ -146,7 +146,7 @@ export default async function Home() {
         </section>
 
         {/* Blog Section */}
-        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px]">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
           <div className="flex flex-col items-center mb-12">
             <h2 className="font-semibold text-foreground text-5xl font-['Montserrat',Helvetica]">
               My Blogs
@@ -238,7 +238,7 @@ export default async function Home() {
             </aside>
           </div>
         </section>
-        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px]">
+        <section className="px-12 md:px-24 2xl:px-48 py-12 max-w-[1800px] mx-auto">
           <QuoteCard />
         </section>
       </div>
