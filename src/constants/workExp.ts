@@ -46,5 +46,59 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
       },
     ],
   },
+  {
+    id: "2",
+    companyName: "Freelance & Open Source",
+    companyLogo: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+    isCurrentEmployer: true,
+    positions: [
+      {
+        id: "2-1",
+        title: "Freelance Mobile & Web Developer",
+        employmentPeriod: "Feb 2025 - Present",
+        employmentType: "Freelance / Contract",
+        description: `- Delivered cross-platform mobile apps using React Native / Expo and responsive web applications with React / Next.js for multiple clients; prioritized performance and accessibility.
+- Designed and implemented scalable APIs and backend services with Node.js and TypeScript, integrated databases (MongoDB / Firebase) and implemented secure authentication flows.
+- Containerized applications and managed deployments using Docker and Kubernetes (EKS/GKE), set up CI/CD pipelines (GitHub Actions) for automated builds, tests, and rollouts.
+- Improved app start times and runtime performance through profiling, code-splitting, and native module optimization; reduced bundle sizes and improved Lighthouse scores for web.
+- Implemented observability using logging and monitoring tools, set up health checks and automated rollbacks for production services to improve reliability.`,
+        icon: "code",
+        skills: [
+          "React Native",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "Docker",
+          "Kubernetes",
+          "CI/CD",
+          "Firebase",
+          "MongoDB",
+        ],
+        isExpanded: false,
+      },
+      {
+        id: "2-2",
+        title: "Open Source Contributor — Mobile & Cloud Tooling",
+        employmentPeriod: "Feb 2025 - Present",
+        employmentType: "Volunteer",
+        description: `- Contributed features, bug fixes, and documentation to multiple open-source libraries focused on mobile tooling, developer DX, and Kubernetes operators.
+- Implemented unit and integration tests, improved package CI pipelines, and helped maintain semantic-release workflows to streamline releases.
+- Triaged issues, reviewed PRs, and collaborated with maintainers to improve library stability and cross-platform compatibility for React Native ecosystems.
+- Authored guides and example apps demonstrating Kubernetes-native deployment patterns for mobile backend services and edge cases for cloud-native mobile apps.`,
+        icon: "code",
+        skills: [
+          "Open Source",
+          "Kubernetes",
+          "Go",
+          "TypeScript",
+          "React Native",
+          "Testing",
+          "CI/CD",
+          "Documentation",
+        ],
+      },
+    ],
+  },
 ];
 export const workExperience = WORK_EXPERIENCE as ExperienceItemType[];
